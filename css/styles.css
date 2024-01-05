@@ -326,22 +326,22 @@ p{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 65, 65, 0); /* Anfangs transparent */
+    background-color: rgba(0, 55, 65, 0); /* Anfangs transparent */
     transition: background-color 0.5s ease; /* Übergangseffekt */
 }
 
 .PlanarFeedtrough:hover::before {
-    background-color: rgba(0, 65, 65, 0.6); /* Bei Hover r0g65b65 mit 0.5 Deckkraft */
+    background-color: rgba(0, 55, 65, 0.6); /* Bei Hover r0g65b65 mit 0.5 Deckkraft */
 }
 
 @media only screen and (max-width: 768px) {
     /* Stile für mobile Geräte hinzufügen */
     .PlanarFeedtrough::before {
-        background-color: rgba(0, 65, 65, 0); /* Standardmäßig transparent für mobile Geräte */
+        background-color: rgba(0, 55, 65, 0); /* Standardmäßig transparent für mobile Geräte */
     }
 
     .PlanarFeedtrough.touch::before {
-        background-color: rgba(0, 65, 65, 0.6); /* Bei Berührung r0g65b65 mit 0.5 Deckkraft für mobile Geräte */
+        background-color: rgba(0, 55, 65, 0.6); /* Bei Berührung r0g65b65 mit 0.5 Deckkraft für mobile Geräte */
     }
 }
 

@@ -14,6 +14,30 @@
 </script>
 
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+      .PlanarFeedtrough {
+          position: relative;
+          height: 100vh;
+          background-image: url("Planleiterplattendurchführung.jpg");
+          background-size: cover;
+          text-align: center;
+          background-position: center;
+          overflow: hidden;
+      }
+
+      .PlanarFeedtrough::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 65, 65, 0);
+          transition: background-color 0.5s ease;
+      }
+  </style>
+
   <title>ALLIGATOR  |  Systems</title>
   <link rel="icon" href="images/logo_tap.png">
 
@@ -82,11 +106,11 @@
     
 
     
-      <div class="PlanarFeedtrough background-param">
-        <!-- Inhalt hier -->
-    </div>
+  
     
-
+    <div class="PlanarFeedtrough" id="mobileHoverElement">
+      <!-- Inhalt hier -->
+  </div>
 
 </section>
 
@@ -840,6 +864,8 @@ Genau wie Alligatoren bewegt sich die Hochvoltschnittstelle im Einsatz nur wenig
 
 
   </section>
+
+  <script src="script.js"></script>
 
 </body>
 
