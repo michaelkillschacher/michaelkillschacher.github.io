@@ -305,19 +305,18 @@ p{
 
 
 
-
-
-
-
 .PlanarFeedtrough {
     position: relative;
     height: 100vh;
     background-image: url("Planleiterplattendurchführung.jpg");
-    background-size: cover;
+    background-size: cover; /* Hintergrundbild über die ganze Breite strecken */
     text-align: center;
     background-position: center;
-    overflow: hidden; /* Um das Pseudo-Element innerhalb der Grenzen zu halten */
+    overflow: hidden;
 }
+
+
+
 
 .PlanarFeedtrough::before {
     content: '';
