@@ -1,0 +1,791 @@
+
+
+body{
+    font-family: "arial nova", Helvetica, sans-serif; 
+
+
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "arial nova", Arial, Helvetica, sans-serif; 
+    color: #004141;
+}
+
+h1{
+    font-size: 5rem;
+    
+}
+
+h2{
+    font-size: 2.6rem;
+}
+
+h3{
+    font-size: 2.3rem;
+}
+
+h4{
+    font-size: 2rem;
+}
+
+h5{
+    font-size: 1.8rem;
+}
+
+h6{
+    font-size: 1.7rem;
+}
+
+.bold{
+    font-weight:900;
+}
+
+.slim{
+    font-weight:500;  
+}
+
+.font-small{
+    font-size: 5px; 
+}
+
+.font-extra-small{
+    font-size: 0.5px; 
+    line-height: 0.5px;
+}
+
+
+.font-size-3{
+    font-size: 2.3rem;
+}
+
+.font-size-4{
+    font-size: 2rem;
+}
+
+.font-size-5{
+    font-size: 1.8rem;
+}
+
+.font-size-6{
+    font-size: 1.7rem;
+}
+
+
+.font-size-7{
+    font-size: 1.0rem;
+}
+
+.font-size-8{
+    font-size: 0.8rem;
+}
+
+
+.flex-font-long{
+    font-size: clamp(2.2rem, 6vw, 3rem);
+}
+
+.flex-font-extra-long{
+    font-size: clamp(2rem, 5vw, 2.5rem);
+}
+
+.flex-font-medium{
+    font-size: clamp(2.8rem, 5vw, 5.5rem);
+}
+
+
+.flex-font{
+    font-size: clamp(3rem, 6vw, 6rem);
+}
+
+.flex-font-short{
+    font-size: clamp(4rem, 6vw, 6rem);
+}
+
+.flex-font-extra-short{
+    font-size: clamp(7rem, 10vw, 10rem);
+}
+
+
+p{
+    color: #004141;
+    font-size: 1.1rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+.p-system{
+    margin-top: 10px;  
+}
+
+.head-section{
+    background-color: #004141;
+    height: 100vh;
+    width: 100%;
+}
+
+.colored-section{
+    background-color: #004141;
+       width: 100%;
+   }
+   
+   .white-section{
+       width: 100%;
+   }
+
+.screen-high{
+    height: 100vh;
+}
+
+.screen-high-40{
+    height: 40vh;
+}
+
+
+   .row{
+    width: 100%;   
+   }
+
+
+.navbar-brand{
+    padding: 2px;
+}
+
+
+
+.navbar-custom {
+    color: #A0DCE6;
+    font-size: clamp(1.4rem, 4.5vw, 1.8rem);
+    line-height: 80px;
+    height: 7vh;
+
+}
+
+.navbar-custom:hover{
+    color: #fa6400;
+    font-size: clamp(1.5rem, 4.5vw, 1.9rem);
+}
+
+.bg-alligator{
+    background-color: #004141;
+}
+
+.bg-bright{
+    background-color: #A0DCE6;
+}
+
+.video-process-section{
+    background-color: rgb(106, 156, 172);
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Andere CSS-Stile... */
+
+.video-container {
+    position: relative;
+    width: 100%;
+}
+
+.content-container {
+    float: right;
+    width: 100%;
+}
+
+.video-process {
+    max-width: 90%;
+    max-height: 70vh;
+    position: relative;
+    z-index: 1;
+    float: right;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: 100%;
+    z-index: 2;
+}
+
+.desktop-text {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 75%;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 1600px) {
+    .desktop-text {
+        display: none;
+    }
+}
+
+.desktop-text ul {
+    padding-left: 20px;
+    list-style-type: none;
+    font-size: 1.1rem;
+}
+
+.desktop-text li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.desktop-text li::before {
+    content: '\2022';
+    position: absolute;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bg-navbar{
+    background-color: #0a4d4d; 
+}
+
+
+.bg-white{
+    background-color: white;
+}
+
+.bg-transparent{
+    background-color: transparent;
+}
+
+.font-bright{
+    color:#A0DCE6;
+}
+
+.font-white{
+    color: white;
+}
+
+.font-alligator{
+    color:#004141;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.PlanarFeedtrough {
+    position: relative;
+    height: 100vh;
+    background-image: url("Planleiterplattendurchführung.jpg");
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+    overflow: hidden; /* Um das Pseudo-Element innerhalb der Grenzen zu halten */
+}
+
+.PlanarFeedtrough::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 65, 65, 0); /* Anfangs transparent */
+    transition: background-color 0.5s ease; /* Übergangseffekt */
+}
+
+.PlanarFeedtrough:hover::before {
+    background-color: rgba(0, 65, 65, 0.6); /* Bei Hover r0g65b65 mit 0.5 Deckkraft */
+}
+
+@media only screen and (max-width: 768px) {
+    /* Stile für mobile Geräte hinzufügen */
+    .PlanarFeedtrough::before {
+        background-color: rgba(0, 65, 65, 0); /* Standardmäßig transparent für mobile Geräte */
+    }
+
+    .PlanarFeedtrough.touch::before {
+        background-color: rgba(0, 65, 65, 0.6); /* Bei Berührung r0g65b65 mit 0.5 Deckkraft für mobile Geräte */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.background-param{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.road{
+    height: 270px;
+    background-image: url("road.png");
+}
+
+.subtile_box{
+    text-align: left;
+    padding-left: 30px;
+}
+
+.left-padding{
+    padding-left: 30px;
+}
+
+
+
+.line-height-0_5{
+    line-height: 0.1rem;
+}
+
+.line-height-1{
+    line-height: 1rem;
+}
+
+.line-height-2{
+    line-height: 2rem;
+}
+
+.line-height-2_5{
+    line-height: 2.5rem;
+}
+
+.line-height-3{
+    line-height: 3rem;
+}
+
+.line-height-4{
+    line-height: 4rem;
+}
+
+.line-height-5{
+    line-height: 5rem;
+}
+
+.subtitle{
+    font-size: 3rem;
+    font-weight: 100;
+
+}
+
+.H2_E_road{
+    position: absolute;
+    height: 250px;
+    width: 2000px;
+}
+
+.H2_E_truck{
+    padding-top: 10px;
+    padding-bottom: 30px;
+display:block;
+ object-fit: cover;
+ width: 100%;
+ 
+  }
+
+
+.featcher_box{
+    margin-top: 70px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    text-align: left;
+    align-items: center;
+}
+
+
+
+.featchers{
+    list-style: none;
+    padding-left: 0;
+}
+
+/*
+.contact-plate{
+    height: 90vh;
+    background-image: url("contact_plate.jpg");
+}
+*/
+
+.jack{
+    height: 90vh;
+    background-image: url("jack.jpg");
+}
+
+
+.truck-terminal{
+    height: 90vh;
+    background-image: url("truck_terminal.jpg");
+}
+
+.center-wedge{
+    height: 90vh;
+    background-image: url("center_wedge.jpg");
+}
+
+.base-plate-mirror{
+    height: 90vh;
+    background-image: url("base-plate-mirror.jpg");
+}
+
+
+
+.logistic{
+width: 99vw;
+}
+
+.font-100{
+    font-weight: 100;
+}
+
+
+.grd360_subtitle{
+    color: #A0DCE6;
+text-align: left;
+font-size: clamp(1.2rem, 4vw, 4rem);
+font-weight: 100;
+}
+
+.grd360{
+    color: #A0DCE6;
+    text-align: left;
+    font-size: clamp(6rem, 10vw, 10rem);
+    line-height: 8rem;
+    }
+
+
+
+    .subtitle-semi{
+font-size: 3rem;
+    }
+
+.top-space{
+    margin-top: 6vh;
+    margin-left: 30px;
+}
+    
+.top-bottom-space{
+padding-top: 15px;
+padding-bottom: 15px;
+}
+
+.top-bottom-space-2{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    }
+
+
+.top-padding-large{
+    padding-top: 18vh;
+}
+
+.top-padding-medium{
+    padding-top: 7vw;
+}
+
+.top-padding-medium-small{
+    padding-top: 5vw;
+}
+
+.top-bottom-padding{
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+}
+
+.padding-right{
+    padding-right: 5vw;
+}
+
+.top-padding{
+    padding-top: 6vh;
+}
+
+.top-padding-70{
+    padding-top: 65vh;
+}
+
+
+.top-padding-small{
+    padding-top: 2vh;
+}
+
+.top-bottom-margin{
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+
+.bottom-padding{
+    padding-bottom: 6vh;
+}
+
+.bottom-padding-small{
+    padding-bottom: 3vh;
+}
+
+.voltage-management{
+    margin-top: 40px;
+}
+
+.posbilitys-list{
+    list-style: none;
+}
+
+.text-center{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: auto;
+}
+
+.electric-featchers{
+    width: 62vw;
+    margin-right: 0;
+    margin-left: auto;
+    padding-top: 20vh;
+}
+
+.truck-and-bike{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left-align{
+    text-align: left;
+}
+
+.right-align{
+    text-align: right;
+}
+
+.center-align{
+    text-align: center;
+}
+
+
+.spring-plate{
+display:flex;
+justify-content: left;
+align-items:baseline;
+width: 100%;
+
+  }
+
+  .text-box-zuverlaessig{
+    width: 100%;
+    margin-left: 12px;
+  }
+
+  .truck{
+    display:flex;
+justify-content:center;
+align-items: center;
+      }
+
+      .head-phone{
+        display:flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+          }
+
+          .alligator-logo{
+           padding-top: 3vh;
+           padding-bottom: 3vh;
+         margin-left: 80px;
+         margin-right: 80px;
+         width: 80%;
+          }
+
+      .truck-size{
+height: 350px;
+          }
+
+      
+      .icon{
+        display:block;
+        margin-left: 0;
+        margin-right: auto;
+    height: 100px;
+          }
+
+.text-horizontal-center{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+  .horizont-half{
+    height: 50vh;
+  }
+
+  .explosion{
+    width: 100%;
+    height: 100%;
+  }
+
+.margin-top{
+    margin-top: 5vh;
+}
+
+.margin{
+    margin: 50px;
+}
+.impressum{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 100%;
+    text-align: center;
+}
+
+.navbar-button{
+    height: 5vh;
+    width: 8vh;
+}
+
+.title-padding-top{
+padding-top: 7vw;
+}
+
+
+.title-padding-top-small{
+    padding-top: 4vw;
+    }
+
+
+    .picture-discription{
+        margin-bottom: 0;
+        padding-bottom: 0;
+        height: 100%;
+        text-align: center;
+
+    }
+
+    .michael-schacher{
+        padding-top: 50px;
+        width: 100%;
+    }
+
+
+    .iframe-container{
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+        height: 0;
+    }
+
+    .iframe-container iframe{
+        position: absolute;
+        top:0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 20px;
+    }
+
+.news-foto{
+    width: 100%;
+    padding-bottom: 20px;
+
+}
