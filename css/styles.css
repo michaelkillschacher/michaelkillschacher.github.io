@@ -309,40 +309,24 @@ p{
     position: relative;
     height: 100vh;
     background-image: url("Planleiterplattendurchführung.jpg");
-    background-size: cover; /* Hintergrundbild über die ganze Breite strecken */
+    background-size: cover;
     text-align: center;
     background-position: center;
     overflow: hidden;
 }
 
 
-
-
-.PlanarFeedtrough::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 55, 65, 0); /* Anfangs transparent */
-    transition: background-color 0.5s ease; /* Übergangseffekt */
-}
-
-.PlanarFeedtrough:hover::before {
-    background-color: rgba(0, 55, 65, 0.6); /* Bei Hover r0g65b65 mit 0.5 Deckkraft */
-}
-
 @media only screen and (max-width: 768px) {
-    /* Stile für mobile Geräte hinzufügen */
     .PlanarFeedtrough::before {
-        background-color: rgba(0, 55, 65, 0); /* Standardmäßig transparent für mobile Geräte */
+        background-color: rgba(0, 55, 65, 0);
     }
 
     .PlanarFeedtrough.touch::before {
-        background-color: rgba(0, 55, 65, 0.6); /* Bei Berührung r0g65b65 mit 0.5 Deckkraft für mobile Geräte */
+        background-color: rgba(0, 55, 65, 0.6);
     }
 }
+
+/* Weitere Kommentare und Stile hier, wenn nötig */
 
 
 
