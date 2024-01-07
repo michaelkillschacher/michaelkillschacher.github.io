@@ -1,28 +1,25 @@
 document.addEventListener('DOMContentLoaded', function () {
     var mobileHoverElement = document.getElementById('mobileHoverElement');
 
-    mobileHoverElement.addEventListener('mousedown', function () {
+    // Event Listener für Touchstart und Touchend auf mobilen Geräten
+    mobileHoverElement.addEventListener('touchstart', function () {
         mobileHoverElement.classList.add('touch');
-        console.log('Mousedown Event');
+        console.log('Touchstart Event');
     });
 
-    mobileHoverElement.addEventListener('mouseup', function () {
+    mobileHoverElement.addEventListener('touchend', function () {
         mobileHoverElement.classList.remove('touch');
-        console.log('Mouseup Event');
+        console.log('Touchend Event');
     });
-});
 
-
-document.addEventListener('DOMContentLoaded', function () {
-    var mobileHoverElement = document.getElementById('mobileHoverElement');
-
-    mobileHoverElement.addEventListener('pointerdown', function () {
+    // Event Listener für Hover auf Desktop-Geräten
+    mobileHoverElement.addEventListener('mouseover', function () {
         mobileHoverElement.classList.add('touch');
-        console.log('Pointerdown Event');
+        console.log('Mouseover Event');
     });
 
-    mobileHoverElement.addEventListener('pointerup', function () {
+    mobileHoverElement.addEventListener('mouseout', function () {
         mobileHoverElement.classList.remove('touch');
-        console.log('Pointerup Event');
+        console.log('Mouseout Event');
     });
 });
