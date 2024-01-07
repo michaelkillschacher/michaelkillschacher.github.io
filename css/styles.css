@@ -316,6 +316,25 @@ p{
 }
 
 
+
+
+
+.PlanarFeedtrough::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 55, 65, 0);
+    transition: background-color 0.5s ease;
+}
+
+.PlanarFeedtrough.touch::before {
+    background-color: rgba(0, 55, 65, 0.6);
+}
+
+
 @media only screen and (max-width: 768px) {
     .PlanarFeedtrough::before {
         background-color: rgba(0, 55, 65, 0);
@@ -325,6 +344,9 @@ p{
         background-color: rgba(0, 55, 65, 0.6);
     }
 }
+
+
+
 
 /* Weitere Kommentare und Stile hier, wenn nötig */
 

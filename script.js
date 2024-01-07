@@ -1,14 +1,28 @@
 document.addEventListener('DOMContentLoaded', function () {
     var mobileHoverElement = document.getElementById('mobileHoverElement');
 
-    // Event Listener für Touchstart und Touchend
-    mobileHoverElement.addEventListener('touchstart', function () {
+    mobileHoverElement.addEventListener('mousedown', function () {
         mobileHoverElement.classList.add('touch');
-        console.log('Touchstart Event');
+        console.log('Mousedown Event');
     });
 
-    mobileHoverElement.addEventListener('touchend', function () {
+    mobileHoverElement.addEventListener('mouseup', function () {
         mobileHoverElement.classList.remove('touch');
-        console.log('Touchend Event');
+        console.log('Mouseup Event');
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var mobileHoverElement = document.getElementById('mobileHoverElement');
+
+    mobileHoverElement.addEventListener('pointerdown', function () {
+        mobileHoverElement.classList.add('touch');
+        console.log('Pointerdown Event');
+    });
+
+    mobileHoverElement.addEventListener('pointerup', function () {
+        mobileHoverElement.classList.remove('touch');
+        console.log('Pointerup Event');
     });
 });
