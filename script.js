@@ -1,25 +1,16 @@
+
+
 document.addEventListener('DOMContentLoaded', function () {
     var mobileHoverElement = document.getElementById('mobileHoverElement');
+    var additionalTextElements = document.querySelectorAll('.PlanarFeedtrough .hidden-text');
 
-    // Event Listener für Touchstart und Touchend auf mobilen Geräten
-    mobileHoverElement.addEventListener('touchstart', function () {
-        mobileHoverElement.classList.add('touch');
-        console.log('Touchstart Event');
-    });
+    function toggleTouchClass() {
+        mobileHoverElement.classList.toggle('touch');
+        console.log('Touch Event');
+    }
 
-    mobileHoverElement.addEventListener('touchend', function () {
-        mobileHoverElement.classList.remove('touch');
-        console.log('Touchend Event');
-    });
-
-    // Event Listener für Hover auf Desktop-Geräten
-    mobileHoverElement.addEventListener('mouseover', function () {
-        mobileHoverElement.classList.add('touch');
-        console.log('Mouseover Event');
-    });
-
-    mobileHoverElement.addEventListener('mouseout', function () {
-        mobileHoverElement.classList.remove('touch');
-        console.log('Mouseout Event');
-    });
+    mobileHoverElement.addEventListener('touchstart', toggleTouchClass);
+    mobileHoverElement.addEventListener('touchend', toggleTouchClass);
+    mobileHoverElement.addEventListener('mouseover', toggleTouchClass);
+    mobileHoverElement.addEventListener('mouseout', toggleTouchClass);
 });

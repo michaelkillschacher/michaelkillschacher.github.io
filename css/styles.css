@@ -36,6 +36,8 @@ h6{
     font-size: 1.7rem;
 }
 
+
+
 .bold{
     font-weight:900;
 }
@@ -53,6 +55,11 @@ h6{
     line-height: 0.5px;
 }
 
+
+
+.font-size-40{
+    font-size: 4rem;
+}
 
 .font-size-3{
     font-size: 2.3rem;
@@ -261,6 +268,30 @@ p{
 
 
 
+/* Standard-Stile für den Text */
+.desktop-text h1,
+.desktop-text p,
+.desktop-text ul,
+.desktop-text li {
+    transition: all 0.3s ease;
+    color:rgb(160, 220, 230)
+}
+
+/* Textstil bei Hover auf Desktop-Geräten ändern */
+.desktop-text:hover h1,
+.desktop-text:hover p {
+    color:#004141;
+}
+
+.desktop-text:hover ul,
+.desktop-text:hover li {
+    color:#004141;
+}
+
+
+/* Andere CSS-Stile... */
+
+
 
 
 
@@ -304,7 +335,6 @@ p{
 
 
 
-
 .PlanarFeedtrough {
     position: relative;
     height: 100vh;
@@ -313,8 +343,11 @@ p{
     text-align: center;
     background-position: center;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /* Setzt die Ebene des Hintergrunds */
 }
-
 
 
 
@@ -344,6 +377,25 @@ p{
         background-color: rgba(0, 55, 65, 0.6);
     }
 }
+
+
+
+
+
+
+.PlanarFeedtrough .hidden-text {
+    display: none;
+    position: absolute;
+    z-index: 2; /* Setzt die Ebene des Textes über dem Hintergrund */
+}
+
+.PlanarFeedtrough.touch .hidden-text {
+    display: block;
+    /* Weitere Stile für sichtbaren Text hier hinzufügen */
+}
+
+
+
 
 
 
@@ -546,6 +598,10 @@ width: 99vw;
     font-weight: 100;
 }
 
+.font-600{
+    font-weight: 600;
+}
+
 
 .grd360_subtitle{
     color: #A0DCE6;
@@ -599,6 +655,21 @@ padding-bottom: 15px;
     padding-top: 4vw;
     padding-bottom: 4vw;
 }
+
+.top-poadding-small{
+    padding-top: 16px;
+}
+
+.padding-right-small{
+    padding-right: 16px;
+}
+
+.padding-left-small{
+    padding-left: 10px;
+}
+
+
+
 
 .padding-right{
     padding-right: 5vw;
