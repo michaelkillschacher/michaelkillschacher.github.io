@@ -150,9 +150,16 @@ p{
 }
 
 
-   .row{
+.row{
     width: 100%;   
    }
+
+
+
+
+
+
+/* ---------------NAVBAR */
 
 
 .navbar-brand{
@@ -161,18 +168,35 @@ p{
 
 
 
-.navbar-custom {
-    color: #A0DCE6;
-    font-size: clamp(1.4rem, 4.5vw, 1.8rem);
-    line-height: 80px;
-    height: 7vh;
-
+/* Ändere die Schriftgröße und Farbe für normale Links */
+.navbar-nav .nav-link {
+    font-size: 25px; /* Beispielgröße - ändere nach Bedarf */
+    color: rgb(160, 220, 230);
+    transition: color 0.3s, font-size 0.3s; /* Animation für sanften Übergang hinzufügen */
 }
 
-.navbar-custom:hover{
-    color: #fa6400;
-    font-size: clamp(1.5rem, 4.5vw, 1.9rem);
+/* Ändere die Schriftgröße und Farbe beim Hovern über Links */
+.navbar-nav .nav-link:hover {
+    color: rgb(250, 100, 0);
+    font-size: 25px; /* Beispielgröße - ändere nach Bedarf */
 }
+
+
+
+
+/* Ändere die Größe des Hamburger-Icons */
+.navbar-toggler-icon {
+    font-size: 40px; /* Beispielgröße - ändere nach Bedarf */
+}
+
+
+.button-marging{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
 
 .bg-alligator{
     background-color: #004141;
@@ -182,35 +206,78 @@ p{
     background-color: #A0DCE6;
 }
 
-.video-process-section{
-    background-color: rgb(106, 156, 172);
-    max-width: 100%;
+
+
+
+
+/* Standard-Stile für den Text */
+.desktop-text h1,
+.desktop-text p,
+.desktop-text ul,
+.desktop-text li {
+    transition: all 1s ease;
+    color:#004141;
 }
 
+/* Textstil bei Hover auf Desktop-Geräten ändern */
+.desktop-text:hover h1,
+.desktop-text:hover p {
+    color:#004141;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.desktop-text:hover ul,
+.desktop-text:hover li {
+    color:#004141;
+}
 
 
 /* Andere CSS-Stile... */
 
+
+
+
+
+.tech-layout{
+    width: 100%;
+    }
+
+
+    .foto-team{
+        height: 250px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+.video-process-section {
+    background-color: rgb(106, 156, 172);
+    max-width: 100%;
+    display: inline-block; /* Change this line */
+}
+
+
+
 .video-container {
+    display: flex;
+    align-items: center; /* Zentrieren vertikal */
     position: relative;
     width: 100%;
 }
 
+
+
+
+
 .content-container {
-    float: right;
+    /* Removed float: right; */
     width: 100%;
 }
 
@@ -222,6 +289,7 @@ p{
     float: right;
 }
 
+
 .overlay-image {
     position: absolute;
     top: 0;
@@ -231,17 +299,25 @@ p{
     z-index: 2;
 }
 
+
+
+
 .desktop-text {
     display: block;
     position: absolute;
-    top: 0;
+    top: 50%; /* Vertikale Ausrichtung auf 50% des übergeordneten Containers */
     left: 0;
+    transform: translateY(-50%); /* Korrektur, um den Text genau in der Mitte zu zentrieren */
     z-index: 3;
     width: 75%;
     padding: 20px;
+    box-sizing: border-box; /* Beachte auch die Box-Größe, um das Padding in die Berechnung einzubeziehen */
 }
 
-@media only screen and (max-width: 1600px) {
+
+
+
+@media only screen and (max-width: 1400px) {
     .desktop-text {
         display: none;
     }
@@ -268,28 +344,7 @@ p{
 
 
 
-/* Standard-Stile für den Text */
-.desktop-text h1,
-.desktop-text p,
-.desktop-text ul,
-.desktop-text li {
-    transition: all 0.3s ease;
-    color:rgb(160, 220, 230)
-}
 
-/* Textstil bei Hover auf Desktop-Geräten ändern */
-.desktop-text:hover h1,
-.desktop-text:hover p {
-    color:#004141;
-}
-
-.desktop-text:hover ul,
-.desktop-text:hover li {
-    color:#004141;
-}
-
-
-/* Andere CSS-Stile... */
 
 
 
@@ -360,7 +415,7 @@ p{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 55, 65, 0);
-    transition: background-color 0.5s ease;
+    transition: background-color 1s ease;
 }
 
 .PlanarFeedtrough.touch::before {
@@ -386,7 +441,7 @@ p{
 .PlanarFeedtrough .hidden-text {
     display: none;
     position: absolute;
-    z-index: 2; /* Setzt die Ebene des Textes über dem Hintergrund */
+    z-index: 2;
 }
 
 .PlanarFeedtrough.touch .hidden-text {
@@ -656,6 +711,7 @@ padding-bottom: 15px;
     padding-bottom: 4vw;
 }
 
+
 .top-poadding-small{
     padding-top: 16px;
 }
@@ -727,7 +783,7 @@ padding-bottom: 15px;
     margin-right: auto;
 }
 
-.left-align{
+.featcher_box{
     text-align: left;
 }
 
@@ -815,10 +871,7 @@ height: 350px;
     text-align: center;
 }
 
-.navbar-button{
-    height: 5vh;
-    width: 8vh;
-}
+
 
 .title-padding-top{
 padding-top: 7vw;
