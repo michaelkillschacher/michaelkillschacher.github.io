@@ -238,6 +238,72 @@
 
 
 
+
+
+
+
+
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-8 col-md-offset-2 col-xs-12">
+          <ul class="timeline-v2">
+              <li ng-repeat="(key, value) in cntrl.notifications" data-date="{{key}}">
+                  <div ng-repeat="notification in value">
+                      <div class="media">
+                          <div class="media-left">
+                              <a href="javascript:void(0);">
+                                  <img class="media-object img-circle"
+                                       src="{{notification.img}}" alt="Image">
+                              </a>
+                          </div>
+                          <div class="media-body media-middle" data-time="{{notification.time}}" ng-bind-html="notification.text | sanitize"></div>
+                          
+                      </div>
+                  </div>
+              </li>
+
+              <li ng-repeat="(key, value) in cntrl.notifications" data-date="{{key}}">
+                <div ng-repeat="notification in value">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="javascript:void(0);">
+                                <img class="media-object img-circle"
+                                     src="{{notification.img}}" alt="Image">
+                            </a>
+                        </div>
+                        <div class="media-body media-middle" data-time="{{notification.time}}" ng-bind-html="notification.text | sanitize"></div>
+                        
+                    </div>
+                </div>
+            </li>
+            
+          </ul>
+      </div>
+  </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<!-- AngularJS -->
+<script src="https://code.angularjs.org/1.5.7/angular.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <section class="white-section title-padding-top" id="System" style="border: 0px solid;">
   <div class="row left-padding">
     <div class="col-lg-4 col-md-12 col-sm-12" style="border: 0px solid;">
