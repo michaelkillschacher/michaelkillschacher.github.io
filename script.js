@@ -1,22 +1,23 @@
 
-
 document.addEventListener('DOMContentLoaded', function () {
-    var mobileHoverElement = document.getElementById('mobileHoverElement');
-    var additionalTextElements = document.querySelectorAll('.PlanarFeedtrough .hidden-text');
+  var mobileHoverElement = document.getElementById('mobileHoverElement');
 
-    function toggleTouchClass() {
-        mobileHoverElement.classList.toggle('touch');
-        console.log('Touch Event');
-    }
+  function toggleTouchClass() {
+      mobileHoverElement.classList.toggle('touch');
+      console.log('Touch Event');
+  }
 
-    mobileHoverElement.addEventListener('touchstart', toggleTouchClass);
-    mobileHoverElement.addEventListener('touchend', toggleTouchClass);
-    mobileHoverElement.addEventListener('mouseover', toggleTouchClass);
-    mobileHoverElement.addEventListener('mouseout', toggleTouchClass);
+  mobileHoverElement.addEventListener('touchstart', function (event) {
+      event.preventDefault(); // Verhindert das Standard-Touch-Verhalten, wie das Scrollen der Seite
+      var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+      var elementHeight = mobileHoverElement.offsetHeight;
+      var topPosition = (windowHeight - elementHeight) / 2;
+      mobileHoverElement.style.top = topPosition + 'px';
+      toggleTouchClass();
+  });
 });
 
-
-
+// Rest des Codes bleibt unverändert
 
 
 

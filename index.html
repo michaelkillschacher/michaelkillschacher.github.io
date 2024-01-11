@@ -179,7 +179,9 @@
   <div class="row left-padding title-padding-top-small bottom-padding-small" style="border: 0px solid;">
     
     <div class="col-lg-5 col-md-12 col-sm-12 picture-discription" style="border: 0px solid;">
-      <img class="tech-layout bottom-padding-small"src="images/world.png" alt="World" >
+      <video class="tech-layout top-padding" loop muted autoplay>
+        <source src="images/world.mp4" type="video/mp4">
+    </video>
     </div>
     
     
@@ -210,7 +212,7 @@
     </div>
 
     <div class="col-lg-4 col-md-6 col-sm-12 picture-discription" style="border: 0px solid;">
-      <img class="foto-team"src="images/Michi.jpg" alt="World" >
+      <img class="foto-team"src="images/Michi.png" alt="World" >
       <h5 class="font-bright bold top-poadding-small left-align padding-left-small">Michael Schacher (CEO)</h5>
       <h5 class="font-bright left-align padding-left-small font-100">Produktdesign & Software</h5>
     </div>
@@ -244,6 +246,7 @@
 
 
 
+
 <div class="container">
   <div class="row">
       <div class="col-md-12 col-md-offset-12 col-xs-12">
@@ -256,11 +259,11 @@
 
             <li ng-repeat="(key, value) in cntrl.notifications" data-date="2030">
               <div ng-repeat="notification in value">
-                <div class="media media hovered">
+                <div class="media hovered">
                   <div class="media-left">
-                    <a href="javascript:void(0);">
-                      <img class="media-object img-circle" src="images/Michi.jpg" alt="Image">
-                    </a>
+
+                      <img class="media-object img-circle" src="images/chart.gif" alt="Image">
+
                   </div>
                   <div class="media-body media-middle padding-left-small top-bottom-padding-small" data-time="1.5% Marktanteil in der EU" ng-bind-html="notification.text | sanitize">
                     <p class="font-100">in der EU rechnet man mit über 60'000 Neuzulassungen von reinelktrischen sattelzugmschinen. Unser Ziel ist es dass 1.5% dieser Fahrzeuge mit einer Alligaot Hochvoltschnittstelle ausgerüstet werden. Das entspricht inetwa 900 Systemen</p>
@@ -269,15 +272,40 @@
               </div>
             </li>
             
+
+
+            
+
+            <li ng-repeat="(key, value) in cntrl.notifications" data-date="2026 - 2027">
+              <div ng-repeat="notification in value">
+                <div class="media hovered">
+                  <div class="media-left">
+
+                      <img class="media-object img-circle" src="images/production.gif" alt="Image">
+                      <img class="media-object img-circle overlay-image-2 hide-on-hover" src="images/production.png" alt="Overlay Image">
+
+                  </div>
+                  <div class="media-body media-middle padding-left-small top-bottom-padding-small" data-time="1.5% Marktanteil in der EU" ng-bind-html="notification.text | sanitize">
+                    <p class="font-100">in der EU rechnet man mit über 60'000 Neuzulassungen von reinelktrischen sattelzugmschinen. Unser Ziel ist es dass 1.5% dieser Fahrzeuge mit einer Alligaot Hochvoltschnittstelle ausgerüstet werden. Das entspricht inetwa 900 Systemen</p>
+                  </div>
+                </div>
+              </div>
+            </li>
 
 
             <li ng-repeat="(key, value) in cntrl.notifications" data-date="2026 -2027">
               <div ng-repeat="notification in value">
                 <div class="media media hovered">
                   <div class="media-left">
-                    <a href="javascript:void(0);">
-                      <img class="media-object img-circle" src="images/Michi.jpg" alt="Image">
-                    </a>
+
+
+                    <img class="media-object img-circle" src="images/Production.gif" alt="Image">
+                    <img class="media-object img-circle overlay-image-2" src="images/production.png" alt="Overlay Image">
+                      
+                      
+          
+
+
                   </div>
                   <div class="media-body media-middle padding-left-small top-bottom-padding-small" data-time="1.5% Marktanteil in der EU" ng-bind-html="notification.text | sanitize">
                     <p class="font-100">in der EU rechnet man mit über 60'000 Neuzulassungen von reinelktrischen sattelzugmschinen. Unser Ziel ist es dass 1.5% dieser Fahrzeuge mit einer Alligaot Hochvoltschnittstelle ausgerüstet werden. Das entspricht inetwa 900 Systemen</p>
@@ -287,12 +315,30 @@
             </li>
             
 
+            <li ng-repeat="(key, value) in cntrl.notifications" data-date="2026 -2027">
+              <div ng-repeat="notification in value">
+                <div class="media media hovered">
+                  <div class="media-left">
+
+                      <img class="media-object img-circle" src="images/wired-outline-268-avatar-man.gif" alt="Image">
+
+                  </div>
+                  <div class="media-body media-middle padding-left-small top-bottom-padding-small" data-time="1.5% Marktanteil in der EU" ng-bind-html="notification.text | sanitize">
+                    <p class="font-100">in der EU rechnet man mit über 60'000 Neuzulassungen von reinelktrischen sattelzugmschinen. Unser Ziel ist es dass 1.5% dieser Fahrzeuge mit einer Alligaot Hochvoltschnittstelle ausgerüstet werden. Das entspricht inetwa 900 Systemen</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+
+
+
             <li ng-repeat="(key, value) in cntrl.notifications" data-date="2024 -2026">
               <div ng-repeat="notification in value">
                 <div class="media media hovered">
                   <div class="media-left">
                     <a href="javascript:void(0);">
-                      <img class="media-object img-circle" src="images/Michi.jpg" alt="Image">
+                      <img class="media-object img-circle" src="images/pilot.png" alt="Image">
                     </a>
                   </div>
                   <div class="media-body media-middle padding-left-small top-bottom-padding-small" data-time="1.5% Marktanteil in der EU" ng-bind-html="notification.text | sanitize">
