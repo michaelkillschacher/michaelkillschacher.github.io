@@ -1,21 +1,37 @@
 
 
+
 document.addEventListener('DOMContentLoaded', function () {
-    var mobileHoverElement = document.getElementById('mobileHoverElement');
-    var additionalTextElements = document.querySelectorAll('.PlanarFeedtrough .hidden-text');
+  var mobileHoverElement = document.getElementById('mobileHoverElement');
+  var mediaElement = document.querySelector('.media');
 
-    function toggleTouchClass() {
-        mobileHoverElement.classList.toggle('touch');
-        console.log('Touch Event');
-    }
+  function toggleTouchClass() {
+      mobileHoverElement.classList.toggle('touch');
+      console.log('Touch Event');
+  }
 
-    mobileHoverElement.addEventListener('touchstart', toggleTouchClass);
-    mobileHoverElement.addEventListener('touchend', toggleTouchClass);
-    mobileHoverElement.addEventListener('mouseover', toggleTouchClass);
-    mobileHoverElement.addEventListener('mouseout', toggleTouchClass);
+  function handleVerticalPosition() {
+      var rect = mobileHoverElement.getBoundingClientRect();
+      var verticalMiddle = (rect.top + rect.bottom) / 2;
+      var screenHeight = window.innerHeight || document.documentElement.clientHeight;
+
+      if (verticalMiddle >= 0 && verticalMiddle <= screenHeight) {
+          // Element befindet sich in der Mitte des Bildschirms
+          console.log('Element in der Mitte des Bildschirms');
+          // Fügen Sie hier den Code für die gewünschten Aktionen hinzu
+      }
+  }
+
+  mobileHoverElement.addEventListener('touchstart', toggleTouchClass);
+  mobileHoverElement.addEventListener('touchend', toggleTouchClass);
+
+  // Event-Listener für Desktop-Version (Hover)
+  mediaElement.addEventListener('mouseover', toggleTouchClass);
+  mediaElement.addEventListener('mouseout', toggleTouchClass);
+
+  // Event-Listener für Mobilversion (vertikale Position)
+  window.addEventListener('scroll', handleVerticalPosition);
 });
-
-
 
 
 

@@ -261,7 +261,7 @@ p{
       .timeline-v2 {
         margin-bottom: 0;
         list-style: none;
-        padding-left: 120px;
+        padding-left: 60px;
         padding-right: 0px;
         position: relative;
       
@@ -431,7 +431,7 @@ p{
             content: '';
             position: absolute;
             top: 0;
-            left: -20px;
+            left: -40px;
             width: 2px;
             height: 0; /* Setzen Sie die Höhe auf 0, um das vertikale Stück zu verbergen */
             border-left: 2px solid rgb(250, 100, 0);
@@ -456,7 +456,7 @@ p{
         /* Position des PNG-Bildes anpassen */
         .overlay-image-2 {
             position: absolute;
-            left: 162px !important;
+            left: 192px !important;
             top: 42px !important; /* Ändern Sie diesen Wert, falls erforderlich */
             width: 10%; /* Passen Sie die Breite des PNG-Bildes auf mobile Geräte an */
             height: auto; /* Passen Sie die Höhe des PNG-Bildes auf mobile Geräte an */
