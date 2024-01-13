@@ -132,7 +132,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
 document.addEventListener('DOMContentLoaded', function () {
   var timelineItems = document.querySelectorAll('.timeline-v2 > li');
 
