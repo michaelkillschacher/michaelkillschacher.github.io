@@ -3,6 +3,34 @@
 
 <head>
 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5Z6VXQ86S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-Q5Z6VXQ86S');
+  </script>
+  
+    <meta charset="utf-8">
+    <title>ALLIGATOR  |  Systems</title>
+    <link rel="icon" href="images/logo_tap.png">
+  
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+  
+      <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/dd676df723.js" crossorigin="anonymous"></script>
+    
+    
+    
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu&display=swap"
+      rel="stylesheet">
+
+  
  <!-- Google tag (gtag.js) -->
  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5Z6VXQ86S"></script>
  <!-- ... (Ihre restlichen Head-Elemente) -->
@@ -16,12 +44,12 @@
 
  <!-- Bootstrap JavaScript and Popper.js -->
  
- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-     integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY6Xl5UZlFmz5ePqDA6D6Pq16VsnhaI3QCg1j"
-     crossorigin="anonymous"></script>
+
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
      crossorigin="anonymous"></script>
+
+
 
 </head>
 
@@ -81,14 +109,14 @@
 
         </div>
 
-    </div>
+      </div>
     
   
 
 </section>
 
 
-<section class="" style="border: 1px solid;">
+<section class="your-section-class" style="border: 1px solid;">
   
   <div class="row" style="border: 1px solid;">
 
@@ -262,7 +290,8 @@
                 <div class="media hovered">
                   <div class="media-left">
 
-                      <img class="media-object img-circle" src="images/chart.gif" alt="Image">
+                      <img class="media-object img-circle" src="images/production.gif" alt="Image">
+                      <img class="media-object img-circle overlay-image-2 hide-on-hover" src="images/production.png" alt="Overlay Image">
 
                   </div>
                   <div class="media-body media-middle padding-left-small top-bottom-padding-small" data-time="1.5% Marktanteil in der EU" ng-bind-html="notification.text | sanitize">
@@ -276,7 +305,12 @@
 
             
 
-            <li ng-repeat="(key, value) in cntrl.notifications" data-date="2026 - 2027">
+
+
+   
+            
+
+            <li ng-repeat="(key, value) in cntrl.notifications" data-date="2024 - 2026">
               <div ng-repeat="notification in value">
                 <div class="media hovered">
                   <div class="media-left">
@@ -293,64 +327,8 @@
             </li>
 
 
-            <li ng-repeat="(key, value) in cntrl.notifications" data-date="2026 -2027">
-              <div ng-repeat="notification in value">
-                <div class="media media hovered">
-                  <div class="media-left">
 
-
-                    <img class="media-object img-circle" src="images/Production.gif" alt="Image">
-                    <img class="media-object img-circle overlay-image-2" src="images/production.png" alt="Overlay Image">
-                      
-                      
-          
-
-
-                  </div>
-                  <div class="media-body media-middle padding-left-small top-bottom-padding-small" data-time="1.5% Marktanteil in der EU" ng-bind-html="notification.text | sanitize">
-                    <p class="font-100">in der EU rechnet man mit über 60'000 Neuzulassungen von reinelktrischen sattelzugmschinen. Unser Ziel ist es dass 1.5% dieser Fahrzeuge mit einer Alligaot Hochvoltschnittstelle ausgerüstet werden. Das entspricht inetwa 900 Systemen</p>
-                  </div>
-                </div>
-              </div>
-            </li>
-            
-
-            <li ng-repeat="(key, value) in cntrl.notifications" data-date="2026 -2027">
-              <div ng-repeat="notification in value">
-                <div class="media media hovered">
-                  <div class="media-left">
-
-                      <img class="media-object img-circle" src="images/wired-outline-268-avatar-man.gif" alt="Image">
-
-                  </div>
-                  <div class="media-body media-middle padding-left-small top-bottom-padding-small" data-time="1.5% Marktanteil in der EU" ng-bind-html="notification.text | sanitize">
-                    <p class="font-100">in der EU rechnet man mit über 60'000 Neuzulassungen von reinelktrischen sattelzugmschinen. Unser Ziel ist es dass 1.5% dieser Fahrzeuge mit einer Alligaot Hochvoltschnittstelle ausgerüstet werden. Das entspricht inetwa 900 Systemen</p>
-                  </div>
-                </div>
-              </div>
-            </li>
-
-
-
-
-            <li ng-repeat="(key, value) in cntrl.notifications" data-date="2024 -2026">
-              <div ng-repeat="notification in value">
-                <div class="media media hovered">
-                  <div class="media-left">
-                    <a href="javascript:void(0);">
-                      <img class="media-object img-circle" src="images/pilot.png" alt="Image">
-                    </a>
-                  </div>
-                  <div class="media-body media-middle padding-left-small top-bottom-padding-small" data-time="1.5% Marktanteil in der EU" ng-bind-html="notification.text | sanitize">
-                    <p class="font-100">in der EU rechnet man mit über 60'000 Neuzulassungen von reinelktrischen sattelzugmschinen. Unser Ziel ist es dass 1.5% dieser Fahrzeuge mit einer Alligaot Hochvoltschnittstelle ausgerüstet werden. Das entspricht inetwa 900 Systemen</p>
-                  </div>
-                </div>
-            </li>
-
-
-
-            <li ng-repeat="(key, value) in cntrl.notifications" data-date="Heute">
-
+            <li ng-repeat="(key, value) in cntrl.notifications" data-date="Heute" class="today">
               <div class="timeline-content">
                   <p class="margin-right">Heute</p>
               </div>
@@ -358,57 +336,63 @@
 
 
 
+          <li ng-repeat="(key, value) in cntrl.notifications" data-date="2030">
+            <div ng-repeat="notification in value">
+              <div class="media hovered">
+                <div class="media-left">
 
-            <li ng-repeat="(key, value) in cntrl.notifications" data-date="2023">
-              <div ng-repeat="notification in value">
-                <div class="media media hovered">
-                  <div class="media-left">
-                    <a href="javascript:void(0);">
-                      <img class="media-object img-circle" src="images/Michi.jpg" alt="Image">
-                    </a>
-                  </div>
-                  <div class="media-body media-middle padding-left-small top-bottom-padding-small" data-time="1.5% Marktanteil in der EU" ng-bind-html="notification.text | sanitize">
-                    <p class="font-100">in der EU rechnet man mit über 60'000 Neuzulassungen von reinelktrischen sattelzugmschinen. Unser Ziel ist es dass 1.5% dieser Fahrzeuge mit einer Alligaot Hochvoltschnittstelle ausgerüstet werden. Das entspricht inetwa 900 Systemen</p>
-                  </div>
+                    <img class="media-object img-circle" src="images/production.gif" alt="Image">
+                    <img class="media-object img-circle overlay-image-2 hide-on-hover" src="images/production.png" alt="Overlay Image">
+
+                </div>
+                <div class="media-body media-middle padding-left-small top-bottom-padding-small" data-time="1.5% Marktanteil in der EU" ng-bind-html="notification.text | sanitize">
+                  <p class="font-100">in der EU rechnet man mit über 60'000 Neuzulassungen von reinelktrischen sattelzugmschinen. Unser Ziel ist es dass 1.5% dieser Fahrzeuge mit einer Alligaot Hochvoltschnittstelle ausgerüstet werden. Das entspricht inetwa 900 Systemen</p>
                 </div>
               </div>
-            </li>
+            </div>
+          </li>
             
 
-            <li ng-repeat="(key, value) in cntrl.notifications" data-date="2022">
-              <div ng-repeat="notification in value">
-                <div class="media media hovered">
-                  <div class="media-left">
-                    <a href="javascript:void(0);">
-                      <img class="media-object img-circle" src="images/Michi.jpg" alt="Image">
-                    </a>
-                  </div>
-                  <div class="media-body media-middle padding-left-small top-bottom-padding-small" data-time="1.5% Marktanteil in der EU" ng-bind-html="notification.text | sanitize">
-                    <p class="font-100">in der EU rechnet man mit über 60'000 Neuzulassungen von reinelktrischen sattelzugmschinen. Unser Ziel ist es dass 1.5% dieser Fahrzeuge mit einer Alligaot Hochvoltschnittstelle ausgerüstet werden. Das entspricht inetwa 900 Systemen</p>
-                  </div>
-                </div>
-            </li>
+          <li ng-repeat="(key, value) in cntrl.notifications" data-date="2022">
+            <div ng-repeat="notification in value">
+              <div class="media hovered">
+                <div class="media-left">
 
+                    <img class="media-object img-circle" src="images/production.gif" alt="Image">
+                    <img class="media-object img-circle overlay-image-2 hide-on-hover" src="images/production.png" alt="Overlay Image">
+
+                </div>
+                <div class="media-body media-middle padding-left-small top-bottom-padding-small" data-time="1.5% Marktanteil in der EU" ng-bind-html="notification.text | sanitize">
+                  <p class="font-100">in der EU rechnet man mit über 60'000 Neuzulassungen von reinelktrischen sattelzugmschinen. Unser Ziel ist es dass 1.5% dieser Fahrzeuge mit einer Alligaot Hochvoltschnittstelle ausgerüstet werden. Das entspricht inetwa 900 Systemen</p>
+                </div>
+              </div>
+            </div>
+          </li>
 
             
-            <li ng-repeat="(key, value) in cntrl.notifications" data-date="2021">
-              <div ng-repeat="notification in value">
-                <div class="media media hovered">
-                  <div class="media-left">
-                    <a href="javascript:void(0);">
-                      <img class="media-object img-circle" src="images/Michi.jpg" alt="Image">
-                    </a>
-                  </div>
-                  <div class="media-body media-middle padding-left-small top-bottom-padding-small" data-time="1.5% Marktanteil in der EU" ng-bind-html="notification.text | sanitize">
-                    <p class="font-100">in der EU rechnet man mit über 60'000 Neuzulassungen von reinelktrischen sattelzugmschinen. Unser Ziel ist es dass 1.5% dieser Fahrzeuge mit einer Alligaot Hochvoltschnittstelle ausgerüstet werden. Das entspricht inetwa 900 Systemen</p>
-                  </div>
+          <li ng-repeat="(key, value) in cntrl.notifications" data-date="2021">
+            <div ng-repeat="notification in value">
+              <div class="media hovered">
+                <div class="media-left">
+
+                    <img class="media-object img-circle" src="images/production.gif" alt="Image">
+                    <img class="media-object img-circle overlay-image-2 hide-on-hover" src="images/production.png" alt="Overlay Image">
+
                 </div>
-            </li>
+                <div class="media-body media-middle padding-left-small top-bottom-padding-small" data-time="1.5% Marktanteil in der EU" ng-bind-html="notification.text | sanitize">
+                  <p class="font-100">in der EU rechnet man mit über 60'000 Neuzulassungen von reinelktrischen sattelzugmschinen. Unser Ziel ist es dass 1.5% dieser Fahrzeuge mit einer Alligaot Hochvoltschnittstelle ausgerüstet werden. Das entspricht inetwa 900 Systemen</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
             
           </ul>
       </div>
   </div>
 </div>
+
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->

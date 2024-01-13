@@ -1,119 +1,117 @@
-
-
-body{
-    font-family: "arial nova", Helvetica, sans-serif; 
+body {
+    font-family: "arial nova", Helvetica, sans-serif;
 
 
 }
 
-h1, h2, h3, h4, h5, h6{
-    font-family: "arial nova", Arial, Helvetica, sans-serif; 
+h1, h2, h3, h4, h5, h6 {
+    font-family: "arial nova", Arial, Helvetica, sans-serif;
     color: #004141;
 }
 
-h1{
+h1 {
     font-size: 5rem;
-    
+
 }
 
-h2{
+h2 {
     font-size: 2.6rem;
 }
 
-h3{
+h3 {
     font-size: 2.3rem;
 }
 
-h4{
+h4 {
     font-size: 1.8em;
 }
 
-h5{
+h5 {
     font-size: 1.7em;
 }
 
-h6{
+h6 {
     font-size: 1.6em;
 }
 
 
 
-.bold{
-    font-weight:900;
+.bold {
+    font-weight: 900;
 }
 
-.slim{
-    font-weight:500;  
+.slim {
+    font-weight: 500;
 }
 
-.font-small{
-    font-size: 5px; 
+.font-small {
+    font-size: 5px;
 }
 
-.font-extra-small{
-    font-size: 0.5px; 
+.font-extra-small {
+    font-size: 0.5px;
     line-height: 0.5px;
 }
 
 
 
-.font-size-40{
+.font-size-40 {
     font-size: 4rem;
 }
 
-.font-size-3{
+.font-size-3 {
     font-size: 2.3rem;
 }
 
-.font-size-4{
+.font-size-4 {
     font-size: 2rem;
 }
 
-.font-size-5{
+.font-size-5 {
     font-size: 1.8rem;
 }
 
-.font-size-6{
+.font-size-6 {
     font-size: 1.7rem;
 }
 
 
-.font-size-7{
+.font-size-7 {
     font-size: 1.0rem;
 }
 
-.font-size-8{
+.font-size-8 {
     font-size: 0.8rem;
 }
 
 
-.flex-font-long{
+.flex-font-long {
     font-size: clamp(2.2rem, 6vw, 3rem);
 }
 
-.flex-font-extra-long{
+.flex-font-extra-long {
     font-size: clamp(2rem, 5vw, 2.5rem);
 }
 
-.flex-font-medium{
+.flex-font-medium {
     font-size: clamp(2.8rem, 5vw, 5.5rem);
 }
 
 
-.flex-font{
+.flex-font {
     font-size: clamp(3rem, 6vw, 6rem);
 }
 
-.flex-font-short{
+.flex-font-short {
     font-size: clamp(4rem, 6vw, 6rem);
 }
 
-.flex-font-extra-short{
+.flex-font-extra-short {
     font-size: clamp(7rem, 10vw, 10rem);
 }
 
 
-p{
+p {
     color: #004141;
     font-size: 1.5em;
     margin-top: 30px;
@@ -122,37 +120,37 @@ p{
 
 
 
-.p-system{
-    margin-top: 10px;  
+.p-system {
+    margin-top: 10px;
 }
 
-.head-section{
+.head-section {
     background-color: #004141;
     height: 100vh;
     width: 100%;
 }
 
-.colored-section{
+.colored-section {
     background-color: #004141;
-       width: 100%;
-   }
-   
-   .white-section{
-       width: 100%;
-   }
+    width: 100%;
+}
 
-.screen-high{
+.white-section {
+    width: 100%;
+}
+
+.screen-high {
     height: 100vh;
 }
 
-.screen-high-40{
+.screen-high-40 {
     height: 40vh;
 }
 
 
-.row{
-    width: 100%;   
-   }
+.row {
+    width: 100%;
+}
 
 
 
@@ -162,7 +160,7 @@ p{
 /* ---------------NAVBAR */
 
 
-.navbar-brand{
+.navbar-brand {
     padding: 2px;
 }
 
@@ -170,15 +168,18 @@ p{
 
 /* Ändere die Schriftgröße und Farbe für normale Links */
 .navbar-nav .nav-link {
-    font-size: 25px; /* Beispielgröße - ändere nach Bedarf */
+    font-size: 25px;
+    /* Beispielgröße - ändere nach Bedarf */
     color: rgb(160, 220, 230);
-    transition: color 0.3s, font-size 0.3s; /* Animation für sanften Übergang hinzufügen */
+    transition: color 0.3s, font-size 0.3s;
+    /* Animation für sanften Übergang hinzufügen */
 }
 
 /* Ändere die Schriftgröße und Farbe beim Hovern über Links */
 .navbar-nav .nav-link:hover {
     color: rgb(250, 100, 0);
-    font-size: 25px; /* Beispielgröße - ändere nach Bedarf */
+    font-size: 25px;
+    /* Beispielgröße - ändere nach Bedarf */
 }
 
 
@@ -186,11 +187,12 @@ p{
 
 /* Ändere die Größe des Hamburger-Icons */
 .navbar-toggler-icon {
-    font-size: 40px; /* Beispielgröße - ändere nach Bedarf */
+    font-size: 40px;
+    /* Beispielgröße - ändere nach Bedarf */
 }
 
 
-.button-marging{
+.button-marging {
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -198,11 +200,11 @@ p{
 
 
 
-.bg-alligator{
+.bg-alligator {
     background-color: #004141;
 }
 
-.bg-bright{
+.bg-bright {
     background-color: #A0DCE6;
 }
 
@@ -216,18 +218,18 @@ p{
 .desktop-text ul,
 .desktop-text li {
     transition: all 1s ease;
-    color:#004141;
+    color: #004141;
 }
 
 /* Textstil bei Hover auf Desktop-Geräten ändern */
 .desktop-text:hover h1,
 .desktop-text:hover p {
-    color:#004141;
+    color: #004141;
 }
 
 .desktop-text:hover ul,
 .desktop-text:hover li {
-    color:#004141;
+    color: #004141;
 }
 
 
@@ -237,97 +239,102 @@ p{
 
 
 
-.tech-layout{
+.tech-layout {
     width: 100%;
+}
+
+
+.foto-team {
+    height: 250px;
+    border-radius: 20px;
+    /* Hier kannst du den gewünschten Radius für die Ecken angeben */
+}
+
+
+
+
+
+
+
+.container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.timeline-v2 {
+    margin-bottom: 0;
+    list-style: none;
+    padding-left: 60px;
+    padding-right: 0px;
+    position: relative;
+
+    .media {
+        display: flex;
+        padding: 10px;
+        background-color: rgb(255, 255, 255);
+        -webkit-border-radius: 3px;
+        border-radius: 20px;
+        align-items: center;
+        border: 1px solid rgb(0, 65, 65);
+        /* Hinzugefügter Border */
+    }
+
+    .media-left {
+        margin-right: 10px;
+        /* Fügt einen Abstand zwischen dem Bild und dem Text hinzu */
+    }
+
+    .media-object {
+        width: auto;
+        height: 100%;
+        /* Setzt die Höhe auf 100% des Elternelements (.media) */
+        max-height: 200px;
+        /* Begrenzt die maximale Höhe des Bildes */
+        border-radius: 10px;
+    }
+
+    .media-body {
+        flex: 1;
+        /* Nimmt den verfügbaren Platz ein und ermöglicht, dass der Text den Raum ausfüllt */
     }
 
 
-    .foto-team {
-        height: 250px;
-        border-radius: 20px; /* Hier kannst du den gewünschten Radius für die Ecken angeben */
-     }
 
 
+    /* titel */
+    .media-body[data-time]::after {
+    content: attr(data-time);
+    position: absolute;
+    top: 0;
+    right: -10px;
+    padding: 5px 10px;
+    font-size: 1.5em;
+    color: rgb(160, 220, 230);
+    background-color: rgb(0, 65, 65);
 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
 
-
-    
-      
-    .container {
-        padding-top: 40px;
-        padding-bottom: 40px;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
     }
-      
-      .timeline-v2 {
-        margin-bottom: 0;
-        list-style: none;
-        padding-left: 60px;
-        padding-right: 0px;
-        position: relative;
-      
-        .media {
-            display: flex;
-            padding: 10px;
-            background-color: rgb(255, 255, 255);
-            -webkit-border-radius: 3px;
-            border-radius: 20px;
-            align-items: center;
-            border: 1px solid rgb(0, 65, 65); /* Hinzugefügter Border */
-          }
-          .media-left {
-            margin-right: 10px; /* Fügt einen Abstand zwischen dem Bild und dem Text hinzu */
-          }
-          
-          .media-object {
-            width: auto;
-            height: 100%; /* Setzt die Höhe auf 100% des Elternelements (.media) */
-            max-height: 200px; /* Begrenzt die maximale Höhe des Bildes */
-            border-radius: 10px;
-          }
-          
-          .media-body {
-            flex: 1; /* Nimmt den verfügbaren Platz ein und ermöglicht, dass der Text den Raum ausfüllt */
-          }
-      
 
-          
-
-        /* titel */
-        .media-body {
-          &[data-time]::after {
-            content: attr(data-time);
-            position: absolute;
-            top: 0;
-            right: -10px;
-            padding: 5px 10px;
-            font-size: 1.5em;
-            color: rgb(160, 220, 230);
-            background-color: rgb(0, 65, 65);
-
-      
-            -webkit-border-radius: 10px;
-            border-radius: 10px;
-            
-            
-            -webkit-transition: background-color 0.2s;
-            transition: background-color 0.2s;
-          }
-      
-          p:last-child {
-            margin-bottom: 0;
-          }
-          
-
-        }
+    .media-body[data-time] p:last-child {
+    margin-bottom: 0;
+    }
 
 
-        
-      
-        /* Jahr */
-        > li {
-          position: relative;
-      
-          &[data-date]::before {
+
+    > li.not-in-viewport > div::after {
+        opacity: 0;
+      }
+
+
+    /* Jahr */
+    >li {
+            position: relative;
+
+         &[data-date]::before {
             content: attr(data-date);
             position: absolute;
             top: 44px;
@@ -336,62 +343,65 @@ p{
             white-space: nowrap;
             font-weight: 300;
             font-size: 1.5em;
-            font-family: "arial nova", Arial, Helvetica, sans-serif; 
+            font-family: "arial nova", Arial, Helvetica, sans-serif;
             color: rgb(0, 65, 65);
-          }
-      
-          &[data-date] {
+            }
+
+            &[data-date] {
+
             /* kreis */
-            > div .media::before {
-              content: '';
-              position: absolute;
-              top: 47px;
-              left: -25px;
-              width: 12px;
-              height: 12px;
-              background-color: rgb(0, 65, 65);
-              border: 2px solid rgb(250, 100, 0);
-              z-index: 1;
-      
-              -webkit-border-radius: 50%;
-              border-radius: 50%;
-              
-              -webkit-transition-property: top, left, width, height, border-color;
-              transition-property: top, left, width, height, border-color;
-              
-              -webkit-transition-duration: 0.2s;
-              transition-duration: 0.2s;
+            >div .media::before {
+                content: '';
+                position: absolute;
+                top: 47px;
+                left: -25px;
+                width: 12px;
+                height: 12px;
+                background-color: rgb(160, 220, 230);
+                border: 2px solid rgb(250, 100, 0);
+                z-index: 1;
+
+                -webkit-border-radius: 50%;
+                border-radius: 50%;
+
+                -webkit-transition-property: top, left, width, height, border-color;
+                transition-property: top, left, width, height, border-color;
+
+                -webkit-transition-duration: 0.2s;
+                transition-duration: 0.2s;
+                }
+
+                > div + div .media::before {
+                border-color: #4caf50;
+                }
+        
+                > div,
+                > div + div {
+                .media:hover::before {
+                  border-color: rgb(250, 100, 0);
+                  background-color: rgb(0, 65, 65);
+                    }
+                }
             }
-      
-            > div + div .media::before {
-              border-color: #4caf50;
-            }
-      
-            > div,
-            > div + div {
-              .media:hover::before {
-                border-color: rgb(0, 65, 65);
-                background-color: rgb(0, 65, 65);
-              }
-            }
-          }
-      /* linie */
-          &:not(:last-child) > div:before,
-          &:last-child > div:not(:last-child)::before {
+        
+
+        /* linie */
+        &:not(:last-child)>div:before,
+        &:last-child>div:not(:last-child)::before {
             content: '';
             position: absolute;
             top: 53px;
             left: -20px;
             height: 100%;
             border: 1px solid rgb(250, 100, 0);
-          }
-      
-          &:not(:last-child) > div:not(:last-child):before,
-          &:last-child > div:not(:last-child)::before {
+        }
+
+        &:not(:last-child)>div:not(:last-child):before,
+        &:last-child>div:not(:last-child)::before {
             border-style: dashed;
-          }
-      
-          > div {
+        }
+
+        > div {
             margin-left: 20px;
             padding-top: 10px;
             padding-bottom: 10px;
@@ -404,201 +414,168 @@ p{
                 left: -10px;
                 border-style: solid;
                 border-width: 6px 12px 6px 0;
-                border-color: transparent #ffffff transparent transparent;
-                opacity: 0; /* Start with zero opacity (not visible) */
-                transition: opacity 0.0s; /* Add a transition for smooth effect */
+                border-color: transparent rgb(0, 65, 65) transparent transparent;
+                opacity: 1; /* Start with zero opacity (not visible) */
+                transition: opacity 0.2s; /* Add a transition for smooth effect */
               }
               
-              &:hover::after {
-                opacity: 1; /* Pfeil*/
-                border-color: transparent rgb(0, 65, 65) transparent transparent; /* Change border color to red on hover */
-              }
+              
+
+              
             
             &:hover .media-body[data-time]::after {
-                border-color: rgb(0, 65, 65);
-                background-color: rgb(106, 156, 172);
+                color: rgb(0,65,65);
+                background-color: rgb(160,220,230);
             }
           }
+
+
+          
         }
       }
-      
-
-
-    
-
-      @media (max-width: 1000px) {
-        .timeline-v2 > li[data-date="Heute"]::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -40px;
-            width: 2px;
-            height: 0; /* Setzen Sie die Höhe auf 0, um das vertikale Stück zu verbergen */
-            border-left: 2px solid rgb(250, 100, 0);
-            border-top: none;
-        }
-    
-        .media {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-    
-        .media-left {
-            margin-right: 0;
-            margin-bottom: 10px;
-        }
-    
-        .media-object {
-            position: relative;
-            top: 20px; /* Ändern Sie diesen Wert für die mobile Positionierung des GIF-Bildes */
-        }
-    
-        /* Position des PNG-Bildes anpassen */
-        .overlay-image-2 {
-            position: absolute;
-            left: 192px !important;
-            top: 42px !important; /* Ändern Sie diesen Wert, falls erforderlich */
-            width: 10%; /* Passen Sie die Breite des PNG-Bildes auf mobile Geräte an */
-            height: auto; /* Passen Sie die Höhe des PNG-Bildes auf mobile Geräte an */
-        }
-    
-        /* Weitere spezifische Stile für Mobilgeräte */
-        .timeline-v2 > li > div:hover .media.hovered {
-            content: '';
-            /* ... (andere Stile für Hover-Zustand auf Mobilgeräten) ... */
-        }
-    
 
 
 
 
 
-        
-        .media-body:hover p {
-            content: '';
-            /* ... (andere Stile für Hover-Z
-            ustand auf Mobilgeräten) ... */
-        }
-    }
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-    
-    /* Neue Styles für den Hover-Zustand */
-    .timeline-v2 > li > div:hover .media {
-        background-color: rgb(0, 65, 65);
-        border-color: rgb(0, 65, 65);
-        box-shadow: 0 0 0px 0px #ff0000;
-    }
-    
-    .media-body:hover p {
-        color: rgb(160, 220, 230);
-    }
-    
-    .timeline-v2 > li > div:hover .media-body[data-time]::after {
-        border-color: rgb(106, 156, 172);
-        background-color: rgb(160, 220, 230);
-        color: rgb(0, 65, 65);
-    }
-    
-    .timeline-v2 > li[data-date="Heute"] {
-        position: relative;
-    }
-    
-    .timeline-v2 > li[data-date="Heute"]::before {
+@media (max-width: 1000px) {
+    .timeline-v2>li[data-date="Heute"]::before {
         content: '';
         position: absolute;
-        top: 53px;
-        left: -20px;
-        width: 100%;
-        border-top: 2px solid rgb(250, 100, 0);
-        z-index: 1;
+        top: 0;
+        left: -40px;
+        width: 2px;
+        height: 0;
+        /* Setzen Sie die Höhe auf 0, um das vertikale Stück zu verbergen */
+        border-left: 2px solid rgb(250, 100, 0);
+        border-top: none;
     }
-    
+
+    .media {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .media-left {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .media-object {
+        position: relative;
+        top: 20px;
+        /* Ändern Sie diesen Wert für die mobile Positionierung des GIF-Bildes */
+    }
+
+    /* Position des PNG-Bildes anpassen */
+    .overlay-image-2 {
+        position: absolute;
+        left: 192px!important;
+        top: 42px!important;
+        /* Ändern Sie diesen Wert, falls erforderlich */
+        width: 10%;
+        /* Passen Sie die Breite des PNG-Bildes auf mobile Geräte an */
+        height: auto;
+        /* Passen Sie die Höhe des PNG-Bildes auf mobile Geräte an */
+    }
+
+    /* Weitere spezifische Stile für Mobilgeräte */
+    .timeline-v2>li>div:hover .media.hovered {
+        content: '';
+        /* ... (andere Stile für Hover-Zustand auf Mobilgeräten) ... */
+    }
 
 
-/* ... (Ihr bestehender CSS-Code bleibt unverändert) ... */
 
-/* Hinzufügen einer neuen Klasse für den Hover-Zustand von .media */
-.timeline-v2 > li > div:hover .media.hovered {
-    background-color: rgb(0, 65, 65);
-    border-color: rgb(0, 65, 65);
-    box-shadow: 0 0 0px 0px #ff0000;
+    .media-body:hover p {
+        content: '';
+        /* ... (andere Stile für Hover-Z
+            ustand auf Mobilgeräten) ... */
+    }
 }
-
-/* Styling des Textes innerhalb von .media beim Hover */
-.timeline-v2 > li > div:hover .media.hovered .media-body[data-time]::after {
-    border-color: rgb(106, 156, 172);
-    background-color: rgb(160, 220, 230);
-    color: rgb(0, 65, 65);
-}
-
-.timeline-v2 > li > div:hover .media.hovered .media-body p {
-    color: rgb(160, 220, 230);
-}
-
-
-
 
 
 .overlay-image-2 {
     position: absolute;
-    top: 21px; /* Passen Sie die Position nach Bedarf an */
-    left: 11px; /* Passen Sie die Position nach Bedarf an */
+    top: 21px;
+    /* Passen Sie die Position nach Bedarf an */
+    left: 11px;
+    /* Passen Sie die Position nach Bedarf an */
     width: 100%;
     height: 100%;
-    opacity: 1;
+    opacity: 0;
     transition: opacity 0.3s;
 }
 
 
 
+/*-----bild voerlay*/
+
 .hide-on-hover {
-    /* Fügen Sie weitere Stile für die Sichtbarkeit hinzu, wenn das Bild nicht gehovert wird */
+    
     opacity: 1;
 }
+
+/*
 
 .media:hover .hide-on-hover {
     opacity: 0;
 }
 
 
-
-
-/* Bei Hover-Effekt das überlagernde Bild ausblenden */
-.timeline-v2 > li > div:hover .overlay-image-2 {
+.timeline-v2>li>div:hover .overlay-image-2 {
     opacity: 0;
 }
 
-/* Weitere Stile für den Hover-Zustand auf Desktop */
-.timeline-v2 > li > div:hover .media.hovered {
+
+
+.timeline-v2>li>div:hover .media.hovered {
     background-color: rgb(0, 65, 65);
-    border-color: rgb(0, 65, 65);
-    box-shadow: 0 0 0px 0px #ff0000;
+
 }
 
-.media-body:hover p {
+.timeline-v2 > li > div:hover .media.hovered .media-body p {
     color: rgb(160, 220, 230);
 }
 
-.timeline-v2 > li > div:hover .media-body[data-time]::after {
-    border-color: rgb(106, 156, 172);
+.timeline-v2>li>div:hover .media-body[data-time]::after {
     background-color: rgb(160, 220, 230);
     color: rgb(0, 65, 65);
 }
+
+
+*/
+
+
+.updated-color {
+    color: rgb(0,65,65) !important;
+}
+
+
+.timeline-v2>li.in-viewport>div .media::before {
+    /* Ihre gewünschten Stile für sichtbare Elemente */
+    border-color: rgb(250, 100, 0);
+    background-color: rgb(0, 65, 65);
+  }
+  
+.timeline-v2>li.in-viewport>div .media:hover::before {
+    /* Diese Stile werden auf sichtbare Elemente bei Hover angewendet */
+    border-color: rgb(250, 100, 0);
+    background-color: rgb(0, 65, 65);
+  }
+  
+  .timeline-v2>li.in-viewport>div .media-body[data-time]::after {
+    /* Stile für sichtbare Elemente */
+    color: rgb(0, 65, 65);
+    background-color: rgb(160, 220, 230);
+  }
+  
+
+
+
+
+  
+
 
 
 
@@ -613,14 +590,16 @@ p{
 .video-process-section {
     background-color: rgb(106, 156, 172);
     max-width: 100%;
-    display: inline-block; /* Change this line */
+    display: inline-block;
+    /* Change this line */
 }
 
 
 
 .video-container {
     display: flex;
-    align-items: center; /* Zentrieren vertikal */
+    align-items: center;
+    /* Zentrieren vertikal */
     position: relative;
     width: 100%;
 }
@@ -658,13 +637,16 @@ p{
 .desktop-text {
     display: block;
     position: absolute;
-    top: 50%; /* Vertikale Ausrichtung auf 50% des übergeordneten Containers */
+    top: 50%;
+    /* Vertikale Ausrichtung auf 50% des übergeordneten Containers */
     left: 0;
-    transform: translateY(-50%); /* Korrektur, um den Text genau in der Mitte zu zentrieren */
+    transform: translateY(-50%);
+    /* Korrektur, um den Text genau in der Mitte zu zentrieren */
     z-index: 3;
     width: 75%;
     padding: 20px;
-    box-sizing: border-box; /* Beachte auch die Box-Größe, um das Padding in die Berechnung einzubeziehen */
+    box-sizing: border-box;
+    /* Beachte auch die Box-Größe, um das Padding in die Berechnung einzubeziehen */
 }
 
 
@@ -710,29 +692,29 @@ p{
 
 
 
-.bg-navbar{
-    background-color: #0a4d4d; 
+.bg-navbar {
+    background-color: #0a4d4d;
 }
 
 
-.bg-white{
+.bg-white {
     background-color: white;
 }
 
-.bg-transparent{
+.bg-transparent {
     background-color: transparent;
 }
 
-.font-bright{
-    color:#A0DCE6;
+.font-bright {
+    color: #A0DCE6;
 }
 
-.font-white{
+.font-white {
     color: white;
 }
 
-.font-alligator{
-    color:#004141;
+.font-alligator {
+    color: #004141;
 }
 
 
@@ -754,7 +736,8 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1; /* Setzt die Ebene des Hintergrunds */
+    z-index: 1;
+    /* Setzt die Ebene des Hintergrunds */
 }
 
 
@@ -841,7 +824,7 @@ p{
 
 
 
-.background-param{
+.background-param {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -887,73 +870,73 @@ p{
 
 
 
-.road{
+.road {
     height: 270px;
     background-image: url("road.png");
 }
 
-.subtile_box{
+.subtile_box {
     text-align: left;
     padding-left: 30px;
 }
 
-.left-padding{
+.left-padding {
     padding-left: 30px;
 }
 
 
 
-.line-height-0_5{
+.line-height-0_5 {
     line-height: 0.1rem;
 }
 
-.line-height-1{
+.line-height-1 {
     line-height: 1rem;
 }
 
-.line-height-2{
+.line-height-2 {
     line-height: 2rem;
 }
 
-.line-height-2_5{
+.line-height-2_5 {
     line-height: 2.5rem;
 }
 
-.line-height-3{
+.line-height-3 {
     line-height: 3rem;
 }
 
-.line-height-4{
+.line-height-4 {
     line-height: 4rem;
 }
 
-.line-height-5{
+.line-height-5 {
     line-height: 5rem;
 }
 
-.subtitle{
+.subtitle {
     font-size: 3rem;
     font-weight: 100;
 
 }
 
-.H2_E_road{
+.H2_E_road {
     position: absolute;
     height: 250px;
     width: 2000px;
 }
 
-.H2_E_truck{
+.H2_E_truck {
     padding-top: 10px;
     padding-bottom: 30px;
-display:block;
- object-fit: cover;
- width: 100%;
- 
-  }
+    display: block;
+    object-fit: cover;
+    width: 100%;
+
+}
 
 
-.featcher_box{
+.featcher_box {
     margin-top: 70px;
     padding-bottom: 50px;
     padding-left: 30px;
@@ -963,7 +946,7 @@ display:block;
 
 
 
-.featchers{
+.featchers {
     list-style: none;
     padding-left: 0;
 }
@@ -975,256 +958,257 @@ display:block;
 }
 */
 
-.jack{
+.jack {
     height: 90vh;
     background-image: url("jack.jpg");
 }
 
 
-.truck-terminal{
+.truck-terminal {
     height: 90vh;
     background-image: url("truck_terminal.jpg");
 }
 
-.center-wedge{
+.center-wedge {
     height: 90vh;
     background-image: url("center_wedge.jpg");
 }
 
-.base-plate-mirror{
+.base-plate-mirror {
     height: 90vh;
     background-image: url("base-plate-mirror.jpg");
 }
 
 
 
-.logistic{
-width: 99vw;
+.logistic {
+    width: 99vw;
 }
 
-.font-100{
+.font-100 {
     font-weight: 100;
 }
 
-.font-600{
+.font-600 {
     font-weight: 600;
 }
 
 
-.grd360_subtitle{
+.grd360_subtitle {
     color: #A0DCE6;
-text-align: left;
-font-size: clamp(1.2rem, 4vw, 4rem);
-font-weight: 100;
+    text-align: left;
+    font-size: clamp(1.2rem, 4vw, 4rem);
+    font-weight: 100;
 }
 
-.grd360{
+.grd360 {
     color: #A0DCE6;
     text-align: left;
     font-size: clamp(6rem, 10vw, 10rem);
     line-height: 8rem;
-    }
+}
 
 
 
-    .subtitle-semi{
-font-size: 3rem;
-    }
+.subtitle-semi {
+    font-size: 3rem;
+}
 
-.top-space{
+.top-space {
     margin-top: 6vh;
     margin-left: 30px;
 }
-    
-.top-bottom-space{
-padding-top: 15px;
-padding-bottom: 15px;
+
+.top-bottom-space {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-.top-bottom-space-2{
+.top-bottom-space-2 {
     padding-top: 30px;
     padding-bottom: 30px;
-    }
+}
 
 
-.top-padding-large{
+.top-padding-large {
     padding-top: 18vh;
 }
 
-.top-padding-medium{
+.top-padding-medium {
     padding-top: 7vw;
 }
 
-.top-padding-medium-small{
+.top-padding-medium-small {
     padding-top: 5vw;
 }
 
-.top-bottom-padding{
+.top-bottom-padding {
     padding-top: 4vw;
     padding-bottom: 4vw;
 }
 
-.top-bottom-padding-small{
+.top-bottom-padding-small {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
 }
 
 
-.top-poadding-small{
+.top-poadding-small {
     padding-top: 16px;
 }
 
-.padding-right-small{
+.padding-right-small {
     padding-right: 16px;
 }
 
-.padding-left-small{
+.padding-left-small {
     padding-left: 10px;
 }
 
-.margin-right{
+.margin-right {
     margin-left: -100px;
 }
 
 
-.padding-right{
+.padding-right {
     padding-right: 5vw;
 }
 
-.top-padding{
+.top-padding {
     padding-top: 6vh;
 }
 
-.top-padding-70{
+.top-padding-70 {
     padding-top: 65vh;
 }
 
 
-.top-padding-small{
+.top-padding-small {
     padding-top: 2vh;
 }
 
-.top-bottom-margin{
+.top-bottom-margin {
     margin-top: 20px;
     padding-bottom: 40px;
 }
 
-.bottom-padding{
+.bottom-padding {
     padding-bottom: 6vh;
 }
 
-.bottom-padding-small{
+.bottom-padding-small {
     padding-bottom: 3vh;
 }
 
-.voltage-management{
+.voltage-management {
     margin-top: 40px;
 }
 
-.posbilitys-list{
+.posbilitys-list {
     list-style: none;
 }
 
-.text-center{
+.text-center {
     text-align: center;
     padding-top: 10px;
     padding-bottom: auto;
 }
 
-.electric-featchers{
+.electric-featchers {
     width: 62vw;
     margin-right: 0;
     margin-left: auto;
     padding-top: 20vh;
 }
 
-.truck-and-bike{
+.truck-and-bike {
     margin-left: auto;
     margin-right: auto;
 }
 
-.featcher_box{
+.featcher_box {
     text-align: left;
 }
 
-.right-align{
+.right-align {
     text-align: right;
 }
 
-.center-align{
+.center-align {
     text-align: center;
 }
 
 
-.spring-plate{
-display:flex;
-justify-content: left;
-align-items:baseline;
-width: 100%;
-
-  }
-
-  .text-box-zuverlaessig{
+.spring-plate {
+    display: flex;
+    justify-content: left;
+    align-items: baseline;
     width: 100%;
-    margin-left: 12px;
-  }
 
-  .truck{
-    display:flex;
-justify-content:center;
-align-items: center;
-      }
-
-      .head-phone{
-        display:flex;
-    justify-content:center;
-    align-items: center;
-    width: 100%;
-          }
-
-          .alligator-logo{
-           padding-top: 3vh;
-           padding-bottom: 3vh;
-         margin-left: 80px;
-         margin-right: 80px;
-         width: 80%;
-          }
-
-      .truck-size{
-height: 350px;
-          }
-
-      
-      .icon{
-        display:block;
-        margin-left: 0;
-        margin-right: auto;
-    height: 100px;
-          }
-
-.text-horizontal-center{
-  display: flex;
-  justify-content: left;
-  align-items: center;
 }
 
-  .horizont-half{
-    height: 50vh;
-  }
+.text-box-zuverlaessig {
+    width: 100%;
+    margin-left: 12px;
+}
 
-  .explosion{
+.truck {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.alligator-logo {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    margin-left: 80px;
+    margin-right: 80px;
+    width: 80%;
+}
+
+.truck-size {
+    height: 350px;
+}
+
+
+.icon {
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+    height: 100px;
+}
+
+.text-horizontal-center {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.horizont-half {
+    height: 50vh;
+}
+
+.explosion {
     width: 100%;
     height: 100%;
-  }
+}
 
-.margin-top{
+.margin-top {
     margin-top: 5vh;
 }
 
-.margin{
+.margin {
     margin: 50px;
 }
-.impressum{
+
+.impressum {
     margin-bottom: 0;
     padding-bottom: 0;
     height: 100%;
@@ -1233,47 +1217,47 @@ height: 350px;
 
 
 
-.title-padding-top{
-padding-top: 7vw;
+.title-padding-top {
+    padding-top: 7vw;
 }
 
 
-.title-padding-top-small{
+.title-padding-top-small {
     padding-top: 4vw;
-    }
+}
 
 
-    .picture-discription{
-        margin-bottom: 0;
-        padding-bottom: 0;
-        height: 100%;
-        text-align: center;
+.picture-discription {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 100%;
+    text-align: center;
 
-    }
+}
 
-    .michael-schacher{
-        padding-top: 50px;
-        width: 100%;
-    }
+.michael-schacher {
+    padding-top: 50px;
+    width: 100%;
+}
 
 
-    .iframe-container{
-        position: relative;
-        width: 100%;
-        padding-bottom: 56.25%;
-        height: 0;
-    }
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
 
-    .iframe-container iframe{
-        position: absolute;
-        top:0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        padding-bottom: 20px;
-    }
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+}
 
-.news-foto{
+.news-foto {
     width: 100%;
     padding-bottom: 20px;
 

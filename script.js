@@ -1,36 +1,37 @@
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
   var mobileHoverElement = document.getElementById('mobileHoverElement');
-  var mediaElement = document.querySelector('.media');
+  var additionalTextElements = document.querySelectorAll('.PlanarFeedtrough .hidden-text');
 
   function toggleTouchClass() {
       mobileHoverElement.classList.toggle('touch');
       console.log('Touch Event');
   }
 
-  function handleVerticalPosition() {
-      var rect = mobileHoverElement.getBoundingClientRect();
-      var verticalMiddle = (rect.top + rect.bottom) / 2;
-      var screenHeight = window.innerHeight || document.documentElement.clientHeight;
-
-      if (verticalMiddle >= 0 && verticalMiddle <= screenHeight) {
-          // Element befindet sich in der Mitte des Bildschirms
-          console.log('Element in der Mitte des Bildschirms');
-          // Fügen Sie hier den Code für die gewünschten Aktionen hinzu
-      }
+  function toggleAdditionalTextHoverClass() {
+      additionalTextElements.forEach(function (element) {
+          element.classList.toggle('hovered');
+      });
   }
 
-  mobileHoverElement.addEventListener('touchstart', toggleTouchClass);
-  mobileHoverElement.addEventListener('touchend', toggleTouchClass);
+  mobileHoverElement.addEventListener('touchstart', function (event) {
+      toggleTouchClass();
+      toggleAdditionalTextHoverClass();
+  });
 
-  // Event-Listener für Desktop-Version (Hover)
-  mediaElement.addEventListener('mouseover', toggleTouchClass);
-  mediaElement.addEventListener('mouseout', toggleTouchClass);
+  mobileHoverElement.addEventListener('touchend', function (event) {
+      toggleTouchClass();
+      toggleAdditionalTextHoverClass();
+  });
 
-  // Event-Listener für Mobilversion (vertikale Position)
-  window.addEventListener('scroll', handleVerticalPosition);
+  mobileHoverElement.addEventListener('mouseover', function (event) {
+      toggleTouchClass();
+      toggleAdditionalTextHoverClass();
+  });
+
+  mobileHoverElement.addEventListener('mouseout', function (event) {
+      toggleTouchClass();
+      toggleAdditionalTextHoverClass();
+  });
 });
 
 
@@ -86,4 +87,109 @@ angular.module('app', [])
       }
     ]
   };
+});
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  var observer = new IntersectionObserver(function (entries, observer) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in-viewport");
+      } else {
+        entry.target.classList.remove("in-viewport");
+      }
+    });
+  }, { threshold: 0.5 });
+
+  var timelineItems = document.querySelectorAll('.timeline-v2>li');
+
+  timelineItems.forEach(function (item) {
+    observer.observe(item);
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  var timelineItems = document.querySelectorAll('.timeline-v2 > li');
+
+  var observerOptions = {
+    root: null,
+    rootMargin: '-40%',
+    threshold: 0.11
+  };
+
+  var observer = new IntersectionObserver(handleIntersection, observerOptions);
+
+  timelineItems.forEach(function (item) {
+    // Ausschließen der "Heute"-Elemente
+    if (!item.classList.contains('today')) {
+      observer.observe(item);
+    }
+  });
+
+  function handleIntersection(entries, observer) {
+    entries.forEach(function (entry) {
+      var item = entry.target;
+      var pElement = item.querySelector('.media.hovered .media-body p');
+      var overlayImage = item.querySelector('.overlay-image-2');
+
+      // Ausschließen der "Heute"-Elemente
+      if (!item.classList.contains('today')) {
+        if (entry.isIntersecting) {
+          // Element ist im Viewport
+          item.classList.remove('not-in-viewport');
+          item.classList.add('in-viewport'); // Hinzufügen der Klasse 'in-viewport'
+          console.log('Element is in the viewport:', item);
+        } else {
+          // Element ist nicht im Viewport
+          item.classList.remove('in-viewport'); // Entfernen der Klasse 'in-viewport'
+          item.classList.add('not-in-viewport');
+          console.log('Element is NOT in the viewport:', item);
+        }
+
+        // Füge hier den Code hinzu, um die Änderungen basierend auf dem Scroll-Status vorzunehmen
+        if (entry.isIntersecting) {
+          // Änderungen, wenn das Element sichtbar ist
+          if (overlayImage) {
+            overlayImage.style.opacity = 0;
+          }
+          item.querySelector('.media.hovered').style.backgroundColor = 'rgb(0, 65, 65)';
+          pElement.style.color = 'rgb(160, 220, 230)';
+          // Füge hier weitere Änderungen hinzu, die du basierend auf dem Scroll-Status vornehmen möchtest
+        } else {
+          // Änderungen, wenn das Element nicht sichtbar ist
+          if (overlayImage) {
+            overlayImage.style.opacity = 1;
+          }
+          item.querySelector('.media.hovered').style.backgroundColor = ''; // Setze den Hintergrund zurück
+          pElement.style.color = ''; // Setze die Textfarbe zurück
+          // Füge hier weitere Änderungen hinzu, die du basierend auf dem Scroll-Status vornehmen möchtest
+        }
+      }
+    });
+  }
 });
