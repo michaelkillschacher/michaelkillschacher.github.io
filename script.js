@@ -99,23 +99,6 @@ angular.module('app', [])
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  var observer = new IntersectionObserver(function (entries, observer) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("in-viewport");
-      } else {
-        entry.target.classList.remove("in-viewport");
-      }
-    });
-  }, { threshold: 0.5 });
-
-  var timelineItems = document.querySelectorAll('.timeline-v2>li');
-
-  timelineItems.forEach(function (item) {
-    observer.observe(item);
-  });
-});
 
 
 
@@ -129,66 +112,92 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
+
+/*--------------------------------------------------------------------------------------------*/ 
 
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  var timelineItems = document.querySelectorAll('.timeline-v2 > li');
+  var timelineItems = document.querySelectorAll('.timeline-v2 > li.timeline-item');
+  var currentIndex = 0;
+  var isScrolling = false;
 
-  var observerOptions = {
-    root: null,
-    rootMargin: '-40%',
-    threshold: 0.11
+  var activateNextItem = function () {
+      var item = timelineItems[currentIndex];
+      var overlayImage = item.querySelector('.overlay-image-2');
+      var pElement = item.querySelector('.media.hovered .media-body p');
+      var dateElement = item.querySelector('.timeline-date');
+
+      // Füge die Klassen "active" hinzu, wenn das Element aktiviert wird
+      item.classList.remove('not-in-viewport');
+      item.classList.add('in-viewport', 'active');
+
+      // Änderungen, wenn das Element sichtbar ist
+      if (overlayImage) {
+          overlayImage.style.opacity = 0;
+      }
+      item.querySelector('.media.hovered').style.backgroundColor = 'rgb(0, 65, 65)';
+      pElement.style.color = 'rgb(160, 220, 230)';
+      
+      // Fett machen, wenn das Element aktiviert ist
+      if (dateElement) {
+          dateElement.classList.add('active');
+      }
   };
 
-  var observer = new IntersectionObserver(handleIntersection, observerOptions);
-
-  timelineItems.forEach(function (item) {
-    // Ausschließen der "Heute"-Elemente
-    if (!item.classList.contains('today')) {
-      observer.observe(item);
-    }
-  });
-
-  function handleIntersection(entries, observer) {
-    entries.forEach(function (entry) {
-      var item = entry.target;
-      var pElement = item.querySelector('.media.hovered .media-body p');
+  var deactivateCurrentItem = function () {
+      var item = timelineItems[currentIndex];
       var overlayImage = item.querySelector('.overlay-image-2');
+      var pElement = item.querySelector('.media.hovered .media-body p');
+      var dateElement = item.querySelector('.timeline-date');
 
-      // Ausschließen der "Heute"-Elemente
-      if (!item.classList.contains('today')) {
-        if (entry.isIntersecting) {
-          // Element ist im Viewport
-          item.classList.remove('not-in-viewport');
-          item.classList.add('in-viewport'); // Hinzufügen der Klasse 'in-viewport'
-          console.log('Element is in the viewport:', item);
-        } else {
-          // Element ist nicht im Viewport
-          item.classList.remove('in-viewport'); // Entfernen der Klasse 'in-viewport'
-          item.classList.add('not-in-viewport');
-          console.log('Element is NOT in the viewport:', item);
-        }
+      // Entferne die Klassen "active", wenn das Element deaktiviert wird
+      item.classList.remove('in-viewport', 'active');
+      item.classList.add('not-in-viewport');
 
-        // Füge hier den Code hinzu, um die Änderungen basierend auf dem Scroll-Status vorzunehmen
-        if (entry.isIntersecting) {
-          // Änderungen, wenn das Element sichtbar ist
-          if (overlayImage) {
-            overlayImage.style.opacity = 0;
-          }
-          item.querySelector('.media.hovered').style.backgroundColor = 'rgb(0, 65, 65)';
-          pElement.style.color = 'rgb(160, 220, 230)';
-          // Füge hier weitere Änderungen hinzu, die du basierend auf dem Scroll-Status vornehmen möchtest
-        } else {
-          // Änderungen, wenn das Element nicht sichtbar ist
-          if (overlayImage) {
-            overlayImage.style.opacity = 1;
-          }
-          item.querySelector('.media.hovered').style.backgroundColor = ''; // Setze den Hintergrund zurück
-          pElement.style.color = ''; // Setze die Textfarbe zurück
-          // Füge hier weitere Änderungen hinzu, die du basierend auf dem Scroll-Status vornehmen möchtest
-        }
+      // Änderungen, wenn das Element nicht sichtbar ist
+      if (overlayImage) {
+          overlayImage.style.opacity = 1;
       }
-    });
-  }
+      item.querySelector('.media.hovered').style.backgroundColor = '';
+      pElement.style.color = '';
+
+      // Entferne die Klasse "active" für das Datum
+      if (dateElement) {
+          dateElement.classList.remove('active');
+      }
+  };
+
+  var handleScroll = function () {
+      if (!isScrolling) {
+          isScrolling = true;
+
+          // Deaktiviere das aktuelle Element
+          deactivateCurrentItem();
+
+          // Überprüfe, welche Elemente sichtbar sind
+          timelineItems.forEach(function (item) {
+              var rect = item.getBoundingClientRect();
+
+              if (rect.top < window.innerHeight * 0.6 && rect.bottom >= 0) {
+                  currentIndex = Array.from(timelineItems).indexOf(item);
+              }
+          });
+
+          // Aktiviere das nächste Element
+          activateNextItem();
+
+          // Warten Sie, bevor das automatische Aktivieren erneut möglich ist
+          setTimeout(function () {
+              isScrolling = false;
+          }, 200); // Ändern Sie die Timeout-Dauer nach Bedarf
+      }
+  };
+
+  // Initial aktiviere das erste Element
+  activateNextItem();
+
+  // Füge einen Event-Listener zum Stoppen der automatischen Aktivierung bei Scrollen hinzu
+  window.addEventListener('scroll', handleScroll);
 });

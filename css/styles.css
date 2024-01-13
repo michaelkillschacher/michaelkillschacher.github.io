@@ -341,7 +341,7 @@ p {
             right: 100%;
             margin-right: 20px;
             white-space: nowrap;
-            font-weight: 300;
+            
             font-size: 1.5em;
             font-family: "arial nova", Arial, Helvetica, sans-serif;
             color: rgb(0, 65, 65);
@@ -378,8 +378,7 @@ p {
                 > div,
                 > div + div {
                 .media:hover::before {
-                border-color: rgb(250, 100, 0);
-                  background-color: rgb(0, 65, 65);
+                    content: '';
                     }
                 }
             }
@@ -408,18 +407,23 @@ p {
             position: relative;
      
      
-            /* Pfeil */
-            &::after {
-                content: '';
-                position: absolute;
-                top: 47px;
-                left: -10px;
-                border-style: solid;
-                border-width: 6px 12px 6px 0;
-                border-color: transparent rgb(0, 65, 65) transparent transparent;
-                opacity: 1; /* Start with zero opacity (not visible) */
-                transition: opacity 0.2s; /* Add a transition for smooth effect */
-              }
+/* Pfeil */
+&::after {
+    content: '';
+    position: absolute;
+    top: 47px;
+    left: -10px;
+    border-style: solid;
+    border-width: 6px 12px 6px 0;
+    border-color: transparent rgb(0, 65, 65) transparent transparent;
+    opacity: 0; /* Start with zero opacity (not visible) */
+    transition: opacity 0.2s; /* Add a transition for smooth effect */
+}
+
+/* Zeige den Pfeil nur, wenn das li-Element sichtbar ist */
+.in-viewport &::after {
+    opacity: 1;
+}
               
               
 
@@ -554,18 +558,28 @@ p {
 }
 
 
-.timeline-v2>li.in-viewport>div .media::before {
+  
+  .timeline-v2>li.in-viewport>div .media::before {
     /* Ihre gewünschten Stile für sichtbare Elemente */
     border-color: rgb(250, 100, 0);
     background-color: rgb(0, 65, 65);
-  }
-  
+}
+
+/* Entfernen oder Anpassen der Hover-Stile */
 .timeline-v2>li.in-viewport>div .media:hover::before {
-    /* Diese Stile werden auf sichtbare Elemente bei Hover angewendet */
     border-color: rgb(250, 100, 0);
     background-color: rgb(0, 65, 65);
-  }
-  
+}
+
+/* Entfernen oder Anpassen der Hover-Stile */
+.timeline-v2 > li.in-viewport:not(.not-in-viewport) > div:hover::before {
+    border-color: rgb(250, 100, 0);
+    background-color: rgb(0, 65, 65);
+}
+
+
+
+
   .timeline-v2 > li.in-viewport:not(.not-in-viewport) > div .media-body[data-time]::after {
     /* Stile für sichtbare Elemente */
     color: rgb(0, 65, 65);
@@ -574,14 +588,25 @@ p {
 }
 
 
+.timeline-v2 > li.timeline-item {
+    font-weight: normal; /* Standardwert für nicht aktivierte Elemente */
+    transition: font-weight 0.2s; /* Füge eine Transition für einen sanften Effekt hinzu */
+}
 
+.timeline-v2 > li.timeline-item.active {
+    font-weight: bold; /* Stil für das aktivierte Element */
+}
   
 
-
-
-
-
-
+.timeline-v2 > li.today::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(250, 100, 0);  /* Ändern Sie die Farbe nach Bedarf */
+}
 
 
 
