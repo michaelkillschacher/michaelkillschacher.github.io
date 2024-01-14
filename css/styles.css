@@ -301,7 +301,7 @@ p {
 
 
 
-    /* titel */
+    /* titel start */
     .media-body[data-time]::after {
     content: attr(data-time);
     position: absolute;
@@ -429,10 +429,7 @@ p {
 
               
             
-            &:hover .media-body[data-time]::after {
-                color: rgb(160,220,230);
-                background-color: rgb(0,65,65);
-            }
+
           }
 
 
@@ -579,12 +576,11 @@ p {
 
 
 
-
+/* Titel aktiv */
   .timeline-v2 > li.in-viewport:not(.not-in-viewport) > div .media-body[data-time]::after {
     /* Stile für sichtbare Elemente */
     color: rgb(0, 65, 65);
     background-color: rgb(160, 220, 230);
-    transition: color 0.2s, background-color 0.2s; /* Füge eine Transition für einen sanften Effekt hinzu */
 }
 
 

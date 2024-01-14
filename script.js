@@ -137,8 +137,8 @@ document.addEventListener('DOMContentLoaded', function () {
       if (overlayImage) {
           overlayImage.style.opacity = 0;
       }
-      item.querySelector('.media.hovered').style.backgroundColor = 'rgb(0, 65, 65)';
-      pElement.style.color = 'rgb(160, 220, 230)';
+      item.querySelector('.media.hovered').style.backgroundColor = 'rgb(0, 65, 65)'; //hindergrund box
+      pElement.style.color = 'rgb(160, 220, 230)';//font
       
       // Fett machen, wenn das Element aktiviert ist
       if (dateElement) {
