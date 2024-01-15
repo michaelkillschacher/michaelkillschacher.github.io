@@ -95,26 +95,7 @@ angular.module('app', [])
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*--------------------------------------------------------------------------------------------*/ 
+/*--------------------------------Zeitstrahl------------------------------------------------------------*/ 
 
 
 
@@ -201,3 +182,58 @@ document.addEventListener('DOMContentLoaded', function () {
   // Füge einen Event-Listener zum Stoppen der automatischen Aktivierung bei Scrollen hinzu
   window.addEventListener('scroll', handleScroll);
 });
+
+
+
+
+
+
+
+/*-----------------------------Worldemissions---------------------------------------------------------------*/ 
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const gallery = document.getElementById("image-gallery");
+  const images = [];
+  const imageCount = 17;
+  const incrementValue = 5;
+
+  function addLeadingZeros(number, length) {
+    return String(number).padStart(length, '0');
+  }
+
+  for (let i = 0; i <= imageCount; i++) {
+    const imageName = `flipbook_smoke.${addLeadingZeros(i, 4)}.png`;
+    images.push(`images/flipbook_world/${imageName}`);
+  }
+
+  let currentIndex = 0;
+
+  function updateImage() {
+    gallery.innerHTML = `<img src="${images[currentIndex]}" alt="world emissions">`;
+  }
+
+  // Event Listener für das Scrollen auf Desktop
+  window.addEventListener("wheel", function (event) {
+    handleScroll(event.deltaY);
+  });
+
+  // Event Listener für das Scrollen auf mobilen Geräten
+  window.addEventListener("touchmove", function (event) {
+    const deltaY = event.touches[0].clientY - event.touches[1].clientY;
+    handleScroll(deltaY);
+  });
+
+  function handleScroll(deltaY) {
+    if ((deltaY > 0 && currentIndex < imageCount - incrementValue) || (deltaY < 0 && currentIndex > 0)) {
+      currentIndex += deltaY > 0 ? incrementValue : -incrementValue;
+    }
+
+    updateImage();
+  }
+
+  // Initialisiere das erste Bild
+  updateImage();
+});
+
