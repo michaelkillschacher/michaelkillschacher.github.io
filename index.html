@@ -211,8 +211,6 @@
         <source src="images/world.mp4" type="video/mp4">
     </video>
     </div>
-    
-    
     <div class="col-lg-7 col-md-12 col-sm-12">
       <h1 class="flex-font-short font-alligator">das Start-up</h1>
            <p class="p-system font-alligator padding-left-small">Im Jahr 2021 gegründet, verfolgt unser Start-up das klare Ziel, die Energieverbindung zwischen Zugmaschine und Auflieger zu automatisieren und zu vernetzen. Durch diese Vision streben wir ein flexibleres Energiemanagement an, was wiederum zu einer erhöhten Prozess- und Energieeffizienz führt. Wir sind davon überzeugt, dass der Einsatz moderner Innovationen heute einen entscheidenden Einfluss auf die Umwelt von morgen hat. Deshalb sehen wir unsere Mission darin, unsere Kernkompetenzen bewusst einzusetzen, um in innovative Technologien zu investieren und die Entwicklung neuer Lösungen massgeblich und nachhaltig zu beeinflussen. 
@@ -224,8 +222,49 @@
   </div>
 
 
-
 </section>
+
+
+
+
+
+
+
+
+
+
+<section class="colored-section bg-white" id="das Start-up">
+  <div class="row left-padding title-padding-top-small bottom-padding-small">
+    <div class="col-lg-5 col-md-12 col-sm-12 picture-discription">
+      <div id="image-gallery" class="tech-layout top-padding">
+        <!-- Hier wird das Bild dynamisch mit JavaScript eingefügt -->
+      </div>
+    </div>
+    <div class="col-lg-7 col-md-12 col-sm-12">
+        <h1 class="flex-font-short font-alligator">das Start-up</h1>
+           <p class="p-system font-alligator padding-left-small">Im Jahr 2021 gegründet, verfolgt unser Start-up das klare Ziel, die Energieverbindung zwischen Zugmaschine und Auflieger zu automatisieren und zu vernetzen. Durch diese Vision streben wir ein flexibleres Energiemanagement an, was wiederum zu einer erhöhten Prozess- und Energieeffizienz führt. Wir sind davon überzeugt, dass der Einsatz moderner Innovationen heute einen entscheidenden Einfluss auf die Umwelt von morgen hat. Deshalb sehen wir unsere Mission darin, unsere Kernkompetenzen bewusst einzusetzen, um in innovative Technologien zu investieren und die Entwicklung neuer Lösungen massgeblich und nachhaltig zu beeinflussen. 
+        Aktuell arbeiten wir an der Planung eines wegweisenden Pilotprojekts, in dem unsere innovative Hochvolt-Schnittstelle unter realen Einsatzbedingungen getestet wird. Die Erkenntnisse aus diesem Pilotprojekt, werden dazu beitragen, das Produkt Marktreif zu machen und die Serieproduktion zu starten.
+      </p>
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <section class="colored-section bg-alligator" id="das Start-up" style="border: 1px solid;">
@@ -290,8 +329,8 @@
                 <div class="media hovered">
                   <div class="media-left">
 
-                      <img class="media-object img-circle" src="images/production.gif" alt="Image">
-                      <img class="media-object img-circle overlay-image-2 hide-on-hover" src="images/production.png" alt="Overlay Image">
+                      <img class="media-object img-circle" src="images/chart.gif" alt="Image">
+                      <img class="media-object img-circle overlay-image-2 hide-on-hover" src="images/chart.png" alt="Overlay Image">
 
                   </div>
                   <div class="media-body media-middle padding-left-small top-bottom-padding-small" data-time="1.5% Marktanteil in der EU" ng-bind-html="notification.text | sanitize">
@@ -324,6 +363,27 @@
             </li>
 
 
+            
+            <li ng-repeat="(key, value) in cntrl.notifications" data-date="2024 - 2026"class="timeline-item">
+              <div ng-repeat="notification in value">
+                <div class="media hovered">
+                  <div class="media-left">
+
+                      <img class="media-object img-circle" src="images/pilot_demo.gif" alt="Image">
+                      <img class="media-object img-circle overlay-image-2 hide-on-hover" src="images/pilot_demo.png" alt="Overlay Image">
+
+                  </div>
+                  <div class="media-body media-middle padding-left-small top-bottom-padding-small" data-time="1.5% Marktanteil in der EU" ng-bind-html="notification.text | sanitize">
+                    <p class="font-100">in der EU rechnet man mit über 60'000 Neuzulassungen von reinelktrischen sattelzugmschinen. Unser Ziel ist es dass 1.5% dieser Fahrzeuge mit einer Alligaot Hochvoltschnittstelle ausgerüstet werden. Das entspricht inetwa 900 Systemen</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+
+
+
+
 
             <li ng-repeat="(key, value) in cntrl.notifications" data-date="" class="today">
               <div class="timeline-content">
@@ -338,8 +398,8 @@
               <div class="media hovered">
                 <div class="media-left">
 
-                    <img class="media-object img-circle" src="images/production.gif" alt="Image">
-                    <img class="media-object img-circle overlay-image-2 hide-on-hover" src="images/production.png" alt="Overlay Image">
+                    <img class="media-object img-circle" src="images/prototyp.gif" alt="Image">
+                    <img class="media-object img-circle overlay-image-2 hide-on-hover" src="images/prototyp.png" alt="Overlay Image">
 
                 </div>
                 <div class="media-body media-middle padding-left-small top-bottom-padding-small" data-time="1.5% Marktanteil in der EU" ng-bind-html="notification.text | sanitize">
