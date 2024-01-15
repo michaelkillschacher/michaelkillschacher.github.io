@@ -252,8 +252,31 @@ p {
 
 
 
+/* --------------World emissions---------- */
+
+#image-gallery {
+    overflow: hidden;
+  }
+  
+  #image-gallery img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease;
+  }
 
 
+
+
+
+
+
+
+
+
+
+
+
+/* --------------Zeitstrahel---------- */
 
 
 .container {
