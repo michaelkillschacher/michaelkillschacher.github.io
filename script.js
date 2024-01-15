@@ -193,11 +193,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+
 document.addEventListener("DOMContentLoaded", function () {
   const gallery = document.getElementById("image-gallery");
   const images = [];
-  const imageCount = 17;
-  const incrementValue = 5;
+  const imageCount = 5;
+  const incrementValue = 1;
 
   function addLeadingZeros(number, length) {
     return String(number).padStart(length, '0');
@@ -214,18 +215,9 @@ document.addEventListener("DOMContentLoaded", function () {
     gallery.innerHTML = `<img src="${images[currentIndex]}" alt="world emissions">`;
   }
 
-  // Event Listener für das Scrollen auf Desktop
-  window.addEventListener("wheel", function (event) {
-    handleScroll(event.deltaY);
-  });
+  function handleScroll(event) {
+    const deltaY = event.deltaY || event.touches[0].clientY - event.touches[1].clientY;
 
-  // Event Listener für das Scrollen auf mobilen Geräten
-  window.addEventListener("touchmove", function (event) {
-    const deltaY = event.touches[0].clientY - event.touches[1].clientY;
-    handleScroll(deltaY);
-  });
-
-  function handleScroll(deltaY) {
     if ((deltaY > 0 && currentIndex < imageCount - incrementValue) || (deltaY < 0 && currentIndex > 0)) {
       currentIndex += deltaY > 0 ? incrementValue : -incrementValue;
     }
@@ -233,7 +225,10 @@ document.addEventListener("DOMContentLoaded", function () {
     updateImage();
   }
 
+  // Event Listener für das Scrollen auf Desktop und mobilen Geräten
+  window.addEventListener("wheel", handleScroll);
+  window.addEventListener("touchmove", handleScroll);
+
   // Initialisiere das erste Bild
   updateImage();
 });
-
