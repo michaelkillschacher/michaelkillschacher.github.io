@@ -193,12 +193,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
 document.addEventListener("DOMContentLoaded", function () {
   const gallery = document.getElementById("image-gallery");
   const images = [];
   const imageCount = 5;
   const incrementValue = 1;
+  let startScrollTop;
 
   function addLeadingZeros(number, length) {
     return String(number).padStart(length, '0');
@@ -215,19 +215,33 @@ document.addEventListener("DOMContentLoaded", function () {
     gallery.innerHTML = `<img src="${images[currentIndex]}" alt="world emissions">`;
   }
 
-  function handleScroll(event) {
-    const deltaY = event.deltaY || event.touches[0].clientY - event.touches[1].clientY;
+  function handleStart() {
+    startScrollTop = window.scrollY;
+  }
 
-    if ((deltaY > 0 && currentIndex < imageCount - incrementValue) || (deltaY < 0 && currentIndex > 0)) {
+  function handleMove() {
+    const currentScrollTop = window.scrollY;
+    const deltaY = currentScrollTop - startScrollTop;
+
+    // Berechne die Anzahl der sichtbaren Bilder basierend auf der Fensterhöhe
+    const visibleImageCount = Math.ceil(window.innerHeight / gallery.clientHeight);
+
+    if ((deltaY > 0 && currentIndex < imageCount - visibleImageCount) || (deltaY < 0 && currentIndex > 0)) {
       currentIndex += deltaY > 0 ? incrementValue : -incrementValue;
     }
 
+    startScrollTop = currentScrollTop;
     updateImage();
   }
 
-  // Event Listener für das Scrollen auf Desktop und mobilen Geräten
-  window.addEventListener("wheel", handleScroll);
-  window.addEventListener("touchmove", handleScroll);
+  // Event Listener für das Scrollen auf Desktop
+  window.addEventListener("wheel", function (event) {
+    handleMove(event);
+  });
+
+  // Event Listener für das Scrollen auf mobilen Geräten
+  window.addEventListener("touchstart", handleStart);
+  window.addEventListener("touchmove", handleMove);
 
   // Initialisiere das erste Bild
   updateImage();
