@@ -1,0 +1,1995 @@
+body {
+    font-family: "arial nova", Helvetica, sans-serif;
+
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "arial nova", Arial, Helvetica, sans-serif;
+    color: #004141;
+}
+
+h1 {
+    font-size: 5rem;
+
+}
+
+h2 {
+    font-size: 2.6rem;
+}
+
+h3 {
+    font-size: 2.3rem;
+}
+  /* Media Query für mobile Ansichten */
+  @media screen and (max-width: 1200px) {
+    h3 {
+      font-size: 2.5em; /* Größere Schriftgröße für mobile Ansichten */
+    }
+  }
+
+
+h4 {
+    font-size: 1.8em;
+}
+
+
+
+h5 {
+    font-size: 1.7em;
+}
+
+
+
+h6 {
+    font-size: 1.6em;
+}
+
+
+
+
+.bold {
+    font-weight: 900;
+}
+
+.slim {
+    font-weight: 500;
+}
+
+.font-small {
+    font-size: 5px;
+}
+
+.font-extra-small {
+    font-size: 0.5px;
+    line-height: 0.5px;
+}
+
+
+
+.font-size-40 {
+    font-size: 4rem;
+}
+
+.font-size-3 {
+    font-size: 2.3rem;
+}
+
+.font-size-4 {
+    font-size: 1.8rem;
+}
+
+/* Media Query für mobile Ansichten */
+@media screen and (max-width: 1200px) {
+    .font-size-4 {
+        font-size: 2.4em; /* Größere Schriftgröße für mobile Ansichten */
+    }
+}
+
+
+
+
+.font-size-5 {
+    font-size: 1.7rem;
+}
+
+/* Media Query für mobile Ansichten */
+@media screen and (max-width: 1200px) {
+    .font-size-5 {
+        font-size: 2.2em; /* Größere Schriftgröße für mobile Ansichten */
+    }
+}
+
+
+
+.font-size-6 {
+    font-size: 25px;
+}
+
+/* Media Query für mobile Ansichten */
+@media screen and (max-width: 1200px) {
+    .font-size-6 {
+        font-size: 35px; /* Größere Schriftgröße für mobile Ansichten */
+    }
+}
+
+
+
+
+.font-size-7 {
+    font-size: 15px; /* Standard-Größe */
+    font-family: "arial nova", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+  
+  /* Media Query für mobile Ansichten */
+  @media screen and (max-width: 1200px) {
+    .font-size-7  {
+      font-size: 30px; /* Größere Schriftgröße für mobile Ansichten */
+      font-family: "arial nova", Arial, Helvetica, sans-serif;
+      font-weight: 300;
+    }
+}
+  
+
+
+
+
+.font-size-8 {
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+
+.flex-font-long {
+    font-size: clamp(2.2rem, 6vw, 3rem);
+}
+
+.flex-font-extra-long {
+    font-size: clamp(2rem, 5vw, 2.5rem);
+}
+
+.flex-font-medium {
+    font-size: clamp(2.8rem, 5vw, 5.5rem);
+}
+
+
+.flex-font {
+    font-size: clamp(3rem, 6vw, 6rem);
+}
+
+.flex-font-short {
+    font-size: clamp(4rem, 6vw, 6rem);
+}
+
+.flex-font-extra-short {
+    font-size: clamp(7rem, 10vw, 10rem);
+}
+
+
+
+
+
+p {
+    color: #004141;
+    font-size: 20px; /* Standard-Größe */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: "arial nova", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+  
+  /* Media Query für mobile Ansichten */
+  @media screen and (max-width: 1200px) {
+    p {
+      font-size: 32px; /* Größere Schriftgröße für mobile Ansichten */
+      font-family: "arial nova", Arial, Helvetica, sans-serif;
+      font-weight: 400;
+    }
+}
+  
+
+
+
+.font-size-p {
+    font-size: 20px;
+    font-family: "arial nova", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+/* Media Query für mobile Ansichten */
+@media screen and (max-width: 1200px) {
+    .font-size-p {
+        font-size: 32px; /* Größere Schriftgröße für mobile Ansichten */
+        font-family: "arial nova", Arial, Helvetica, sans-serif;
+        font-weight: 400;
+    }
+}
+
+
+.font-30px{
+    font-size: 30px;
+}
+
+
+
+.p-system {
+    margin-top: 10px;
+}
+
+.head-section {
+    background-color: #004141;
+    height: 100vh;
+    width: 100%;
+}
+
+.colored-section {
+    background-color: #004141;
+    width: 100%;
+}
+
+.white-section {
+    width: 100%;
+}
+
+.screen-high {
+    height: 100vh;
+}
+
+.screen-high-40 {
+    height: 40vh;
+}
+
+
+.row {
+    width: 100%;
+}
+
+
+
+
+
+
+/* ---------------NAVBAR */
+
+
+.navbar-brand {
+    padding: 2px;
+}
+
+.navbar-nav {
+    margin-left: -15px; /* Ändere nach Bedarf */
+}
+
+/* Ändere die Schriftgröße und Farbe für normale Links */
+.navbar-nav .nav-link {
+    font-size: 25px;
+    /* Beispielgröße - ändere nach Bedarf */
+    color: rgb(160, 220, 230) !important;
+    transition: color 0.3s, font-size 0.3s;
+    /* Animation für sanften Übergang hinzufügen */
+
+}
+
+/* Ändere die Schriftgröße und Farbe beim Hovern über Links */
+.navbar-nav .nav-link:hover {
+    color: rgb(255, 255, 255) !important;
+    font-size: 25px;
+    /* Beispielgröße - ändere nach Bedarf */
+}
+
+
+
+/* Ändere die Schriftgröße für mobile Ansicht */
+@media only screen and (max-width: 1200px) {
+    .navbar-nav .nav-link {
+        font-size: 35px; /* Beispielgröße für die mobile Ansicht - ändere nach Bedarf */
+    }
+
+    .navbar-nav .nav-link:hover {
+        font-size: 35px; /* Beispielgröße für die mobile Ansicht - ändere nach Bedarf */
+    }
+}
+
+
+
+
+
+/* Ändere die Größe des Hamburger-Icons */
+.navbar-toggler-icon {
+    font-size: 40px;
+    /* Beispielgröße - ändere nach Bedarf */
+}
+
+
+.button-marging {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+.bg-alligator {
+    background-color: #0a4d4d;
+}
+
+.bg-bright {
+    background-color: #A0DCE6;
+}
+
+
+
+
+
+
+.tech-layout {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+.foto-team {
+    height: 250px;
+    border-radius: 20px;
+    /* Hier kannst du den gewünschten Radius für die Ecken angeben */
+}
+
+
+
+/* --------------World emissions---------- */
+
+
+
+.world-emmiossions {
+    position: relative;
+    width: 100%;
+}
+
+
+.world-emmiossions-background {
+    position: relative;
+    z-index: 1; /* schiebt das Bild über das Hintergrundbild */
+    width: 101.5%;
+    
+    
+}
+
+#image-gallery {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding-left: 13px;
+    height: auto; /* Falls das Bild gestreckt erscheint */
+    object-fit: cover; /* Bild proportional zuschneiden */
+    z-index: 2; /* schiebt das Hintergrundbild in den Hintergrund */
+}
+
+
+
+
+#image-gallery {
+    overflow: hidden;
+}
+  
+#image-gallery img {
+    width: 100%;
+    display: block;
+
+}
+
+
+#image-gallery img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Dauer und Timing-Funktion anpassen */
+}
+
+
+
+
+
+
+
+
+/* --------------Zeitstrahel---------- */
+
+
+.container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.date-container {
+    display: flex;
+}
+  
+.date {
+    margin-right: 5px; /* oder einen anderen Abstand, der für Sie funktioniert */
+}
+
+  
+.timeline-v2 {
+    margin-bottom: 0;
+    list-style: none;
+    padding-left: 120px;
+    padding-right: 0px;
+    position: relative;
+
+    .media {
+        display: flex;
+        padding: 10px;
+        background-color: rgb(255, 255, 255);
+        -webkit-border-radius: 3px;
+        border-radius: 20px;
+        align-items: center;
+        border: 3px solid rgb(0, 65, 65);
+        /* Hinzugefügter Border */
+    }
+
+    .media-left {
+        position: relative; /* Änderung der Positionierung */
+        margin: 10px;
+    }
+
+    .media-object,
+    .overlay-image-2 {
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 200px;
+        border-radius: 13px;
+        /* Weitere Stile nach Bedarf */
+    }
+
+
+    .overlay-image-2 {
+        position: absolute;
+        top: 0;
+        /* Passen Sie die Position nach Bedarf an */
+        left: 0;
+        /* Passen Sie die Position nach Bedarf an */
+        width: 200px;
+        height: 200px;
+        opacity: 0;
+    }
+
+    
+
+
+    .media-body {
+        flex: 1;
+        padding-top: 20px;
+        /* Nimmt den verfügbaren Platz ein und ermöglicht, dass der Text den Raum ausfüllt */
+    }
+
+
+
+
+    /* titel start */
+    .media-body[data-time]::after {
+    content: attr(data-time);
+    position: absolute;
+    top: 0;
+    right: -10px;
+    padding: 5px 10px;
+    font-size: 25px;
+    color: rgb(0, 65, 65);
+    background-color: rgb(160, 220, 230);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-transition: background-color 0.0s;
+    transition: background-color 0.0s;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        /* Hier die gewünschte Schriftgröße für mobile Geräte einfügen */
+        .media-body[data-time]::after {
+            font-size: 35px; /* Passen Sie dies entsprechend an */
+        }
+    
+        /* Fügen Sie weitere Anpassungen für mobile Geräte hinzu, falls erforderlich */
+    }
+
+    .media-body[data-time] p:last-child {
+    margin-bottom: 0;
+    }
+
+
+
+    > li.not-in-viewport > div::after {
+        opacity: 0;
+      }
+
+
+    /* Jahr */
+    >li {
+            position: relative;
+
+         &[data-date]::before {
+            content: attr(data-date);
+            white-space: pre-line;
+            position: absolute;
+            top: 44px;
+            right: 100%;
+            margin-right: 20px;
+           
+            
+            font-size: 30px;
+            font-family: "arial nova", Arial, Helvetica, sans-serif;
+            color: rgb(0, 65, 65);
+            }
+
+            &[data-date] {
+
+            /* kreis */
+            >div .media::before {
+                content: '';
+                position: absolute;
+                top: 47px;
+                left: -25px;
+                width: 12px;
+                height: 12px;
+                background-color: rgb(160, 220, 230);
+                border: 2px solid rgb(250, 100, 0);
+                z-index: 1;
+
+                -webkit-border-radius: 50%;
+                border-radius: 50%;
+
+                -webkit-transition-property: top, left, width, height, border-color;
+                transition-property: top, left, width, height, border-color;
+
+                -webkit-transition-duration: 0.2s;
+                transition-duration: 0.2s;
+                }
+
+                > div + div .media::before {
+                border-color: #4caf50;
+                }
+        
+                > div,
+                > div + div {
+                .media:hover::before {
+                    content: '';
+                    }
+                }
+            }
+        
+
+        /* linie */
+        &:not(:last-child)>div:before,
+        &:last-child>div:not(:last-child)::before {
+            content: '';
+            position: absolute;
+            top: 53px;
+            left: -20px;
+            height: 100%;
+            border: 1px solid rgb(250, 100, 0);
+        }
+
+        &:not(:last-child)>div:not(:last-child):before,
+        &:last-child>div:not(:last-child)::before {
+            border-style: dashed;
+        }
+
+        > div {
+            margin-left: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            position: relative;
+     
+     
+/* Pfeil */
+&::after {
+    content: '';
+    position: absolute;
+    top: 47px;
+    left: -10px;
+    border-style: solid;
+    border-width: 6px 12px 6px 0;
+    border-color: transparent rgb(0, 65, 65) transparent transparent;
+    opacity: 0; /* Start with zero opacity (not visible) */
+    transition: opacity 0.2s; /* Add a transition for smooth effect */
+}
+
+/* Zeige den Pfeil nur, wenn das li-Element sichtbar ist */
+.in-viewport &::after {
+    opacity: 1;
+}
+              
+              
+
+              
+            
+
+          }
+
+
+          
+        }
+      }
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    .timeline-v2>li[data-date="Heute"]::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -40px;
+        width: 2px;
+        height: 0;
+        /* Setzen Sie die Höhe auf 0, um das vertikale Stück zu verbergen */
+        border-left: 2px solid rgb(250, 100, 0);
+        border-top: none;
+    }
+
+    .media {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .media-left {
+        padding-top: 40px;
+    }
+
+    .media-body{
+        margin-top: 0px;
+    }
+
+    .media-object {
+        position: relative;
+        top: 20px;
+        width: 80vw;
+        max-width: 200px;
+        height: auto;
+        /* Ändern Sie diesen Wert für die mobile Positionierung des GIF-Bildes */
+    }
+
+    /* Position des PNG-Bildes anpassen Overlay */
+    .overlay-image-2 {
+        position: absolute;
+        left: 0;
+        margin-top: 40px;
+        width: 80vw;
+        max-width: 200px;
+        height: auto;
+        
+    }
+
+    /* Weitere spezifische Stile für Mobilgeräte */
+    .timeline-v2>li>div:hover .media.hovered {
+        content: '';
+        /* ... (andere Stile für Hover-Zustand auf Mobilgeräten) ... */
+    }
+
+
+
+
+    
+
+    .media-body:hover p {
+        content: '';
+        /* ... (andere Stile für Hover-Z
+            ustand auf Mobilgeräten) ... */
+    }
+}
+
+
+
+
+
+/*-----bild voerlay*/
+
+.hide-on-hover {
+    
+    opacity: 1;
+}
+
+/*
+
+.media:hover .hide-on-hover {
+    opacity: 0;
+}
+
+
+.timeline-v2>li>div:hover .overlay-image-2 {
+    opacity: 0;
+}
+
+
+
+.timeline-v2>li>div:hover .media.hovered {
+    background-color: rgb(0, 65, 65);
+
+}
+
+.timeline-v2 > li > div:hover .media.hovered .media-body p {
+    color: rgb(160, 220, 230);
+}
+
+.timeline-v2>li>div:hover .media-body[data-time]::after {
+    background-color: rgb(160, 220, 230);
+    color: rgb(0, 65, 65);
+}
+
+
+*/
+
+
+
+
+
+  
+  .timeline-v2>li.in-viewport>div .media::before {
+    /* Punkt */
+    border-color: rgb(250, 100, 0);
+    background-color: rgb(0, 65, 65);
+}
+
+
+
+
+
+
+
+/* Titel aktiv */
+  .timeline-v2 > li.in-viewport:not(.not-in-viewport) > div .media-body[data-time]::after {
+    /* Stile für sichtbare Elemente */
+    color: rgb(160,220,230);
+    background-color: rgb(0,65, 65);
+}
+
+/* 
+.timeline-v2 > li.timeline-item {
+    font-weight: normal; 
+}
+
+.timeline-v2 > li.timeline-item.active {
+    font-weight: 1000; /* Stil für das aktivierte Element 
+}
+*/
+
+.timeline-v2 > li.today::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-color: rgb(250, 100, 0);  /* Ändern Sie die Farbe nach Bedarf */
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------Technologie---------- */
+
+
+.picture-technologie {
+    background-image: url('exp.png'); /* Pfad zum Bild */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+  @media (max-width: 1200px) {
+    .picture-technologie {
+      height:180vw; /* Höhe entspricht der Bildschirmhöhe in der mobilen Ansicht */
+    }
+}
+  
+  @media (min-width: 1201px) {
+    .picture-technologie {
+      height: auto; /* Automatische Höhe in der Desktop-Ansicht */
+    }
+}
+
+
+.margin-technologie{
+    margin-left: 10px;
+}
+
+@media (max-width: 1200px) {
+    .margin-technologie{
+        margin-left: 15px
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Stil für die Container-Elemente der Collapse-Menüs mit der Klasse .card */
+#accordion .card {
+    background-color:  #0a4d4d; /* Hintergrundfarbe der Collapse-Container */
+    border: 1px solid rgb(0, 65, 65); /* Randfarbe der Collapse-Container */
+    margin-bottom: 10px; /* Abstand zwischen den Collapse-Containern */
+}
+
+/* Stil für die Überschriften der Collapse-Menüs mit der Klasse .card-header */
+#accordion .card-header {
+    background-color:  #0a4d4d; /* Hintergrundfarbe der Collapse-Überschriften */
+    border: 1px solid rgb(0, 65, 65); /* Randfarbe der Collapse-Überschriften */
+    padding: 10px; /* Innenabstand der Collapse-Überschriften */
+}
+
+/* Stil für die Buttons innerhalb der Collapse-Überschriften */
+#accordion .btn-link {
+    color: rgb(160, 220, 230); /* Textfarbe der Buttons */
+    font-size: 22px;
+    font-family: "arial nova", Arial, Helvetica, sans-serif;
+    text-decoration: none; /* Entfernt die Unterstreichung des Textes */
+}
+
+/* Stil für die Buttons innerhalb der Collapse-Überschriften für kleinere Bildschirme */
+@media (max-width: 1200px) {
+    #accordion .btn-link {
+        font-size: 35px; /* Passen Sie die Schriftgröße für kleinere Bildschirme an */
+    }
+}
+
+
+/* Stil für den Inhalt der Collapse-Elemente mit der Klasse .card-body */
+#accordion .card-body {
+    color: rgb(0, 65, 65); /* Textfarbe des Collapse-Inhalts */
+    background-color: #ffffff; /* Hintergrundfarbe des Collapse-Inhalts */
+    padding: 15px; /* Innenabstand des Collapse-Inhalts */
+    font-size: 20px;
+    font-family: "arial nova", Arial, Helvetica, sans-serif;
+    padding-left: 25px;
+}
+
+
+@media (max-width: 1200px) {
+    #accordion .card-body {
+        font-size: 30px; /* Passen Sie die Schriftgröße für kleinere Bildschirme an */
+    }
+}
+
+#accordion .btn-link:hover {
+    color: rgb(255, 255, 255); /* Textfarbe des Buttons beim Hover */
+    text-decoration: none; /* Entfernt die Unterstreichung des Textes beim Hover */
+}
+
+#accordion .btn-link:focus {
+    outline: none; /* Entfernt den blauen Schatten */
+}
+
+/* Stil für den Button-Text beim Focus (nach Aktivierung) */
+#accordion .btn-link:focus,
+#accordion .btn-link.focus {
+    outline: none; /* Entfernt den blauen Schatten */
+    box-shadow: none; /* Entfernt den Schatten */
+}
+
+
+
+
+
+
+
+/* --------------Vorteilse---------- */
+
+/* 
+.button-container {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    height: 100vh; 100% Höhe des Viewports 
+}
+
+*/
+
+/* Allgemeine Anpassungen für Bootstrap-Schaltflächen */
+.btn-primary {
+    
+    /* Hintergrundfarbe ändern */
+    background-color: transparent!important;
+    /* Schriftfarbe ändern */
+    width: 100%;
+    color: rgb(0,65,65) !important;
+    /* Randfarbe ändern */
+    border-color:  rgb(0,50, 50) !important;
+    /* Randradius für abgerundete Ecken */
+    border-radius: 10px !important;
+    /* Breite des Buttons */
+    border-width: 2px!important; /* Passen Sie die Dicke des Randes nach Bedarf an */
+    /* Übergangseffekte für einen weichen Hover-Effekt */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+   
+  }
+  
+
+
+  /* Hover-Stil für den Button */
+  .btn-primary:hover {
+    background-color: #0a4d4d!important; /* Hintergrundfarbe beim Hover */
+    color: rgb(255, 255, 255)!important; /* Hintergrundfarbe beim Hover */
+    /*border-color: rgb(250, 100, 0) !important; */
+    border-width: 2px!important;
+  }
+
+  
+  /* Anpassungen für eine spezifische Schaltfläche mit einer bestimmten Klasse */
+  .container .btn-primary {
+    /* Ändern Sie hier die Schriftgröße */
+    font-size: 22px !important;
+    /* Ändern Sie hier die Schriftart (falls gewünscht) */
+    font-family: "arial nova", Arial, Helvetica, sans-serif;
+    /* Weitere Anpassungen, je nach Bedarf */
+  }
+
+
+
+
+  @media (max-width: 1200px) {
+    .container .btn-primary {
+        font-size: 35px !important;
+    }
+}
+
+
+/* Stil für den Rand eines aktiven Bootstrap-Buttons */
+.btn-primary:focus {
+    /*outline: 2px solid  rgb(160, 220, 230)!important;  Hier die gewünschte Randfarbe definieren */
+    box-shadow: none!important; /* Entfernt den standardmäßigen Schatten-Effekt */
+  }
+  
+
+
+/* Benutzerdefinierte Schriftarten */
+.custom-fonts {
+    font-size: 20px !important;
+    font-family: 'Arial', sans-serif;
+    color: rgb(0,65,65) !important;
+    /* Weitere benutzerdefinierte Schriftarten und -stile, je nach Bedarf */
+  }
+  
+
+  
+  @media (max-width: 1200px) {
+    .custom-fonts {
+        font-size: 30px !important;
+    }
+}
+
+
+
+.btn-primary:focus {
+    outline: 2px solid  rgb(19, 124, 124)!important; /* Hier die gewünschte Randfarbe definieren */
+    box-shadow: 0 0 0 0.2rem rgb(160, 220, 230)!important; /* Ändert die Farbe der Schattenlinie */
+}
+  
+  
+  
+.cont-links{
+    text-align: left;
+}
+
+.card-body {
+    border: none !important;
+}
+
+
+
+
+
+.logistic-center {
+    height: 250px;
+    /*
+    margin: 0 0 0 -35px; 
+    padding: 0;
+    box-sizing: border-box;*/
+}
+
+
+
+@media (max-width: 1200px) {
+    .logistic-center {
+        width: 100%;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+}
+
+/* Neues CSS für den Pfeil und den Textlayout */
+.arrow-icon {
+    font-size: 24px;
+    color: rgb(0, 65, 65);
+}
+
+
+.btn-primary:hover .arrow-icon {
+    color: rgb(255, 255, 255);/* Ihre gewünschte Hover-Farbe für den Pfeil */;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------Usecases---------- */
+
+
+
+
+
+
+
+  
+.truck-animattion {
+    margin-left: 5%;
+    width: 90%; /* Das Bild nimmt die volle Breite des übergeordneten Containers ein */
+    height: auto; /* Das Seitenverhältnis des Bildes beibehalten */
+    display: block; /* Entfernt mögliche Lücken unter dem Bild */
+ 
+  }
+
+  
+
+
+  @media (max-width: 1200px) {
+    .truck-animattion {
+        margin-top: 50px;
+    }
+
+}
+
+.truck-radius{
+    border-radius: 20px;
+    
+}
+
+.truck-border{
+border: 3px solid rgb(0, 65, 65);
+background-color: white;
+padding-bottom: 10px;
+}
+
+
+.multi-column-text-3 {
+    column-count: 3; /* Anzahl der Spalten */
+    column-gap: 20px; /* optional: Spaltenabstand anpassen */
+}
+
+@media (max-width: 1200px) {
+    .multi-column-text-3 {
+        column-count: 1; /* Anzahl der Spalten */
+    }
+
+}
+
+
+
+
+.multi-column-text-2 {
+    column-count: 2; /* Anzahl der Spalten */
+    column-gap: 20px; /* optional: Spaltenabstand anpassen */
+}
+
+
+
+.multi-column-text p {
+    margin-bottom: 10px; /* optional: Abstand zwischen den Absätzen anpassen */
+}
+
+
+
+.frame-padding{
+    padding-bottom: 30px;
+}
+
+
+@media (max-width: 1200px) {
+    .frame-padding {
+        padding-bottom: 0px;
+    }
+
+}
+
+
+
+
+
+
+/* --------------USP Matrix---------- */
+
+.picture-matrix {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid; /* Beispiel für eine Randlinie */
+  }
+  
+
+.picture-truck {
+    width: 100%; /* Stellt sicher, dass das Bild die volle Breite des Containers einnimmt */
+    height: auto; /* Behält das Seitenverhältnis des Bildes bei */
+    display: block; /* Entfernt den Abstand unter dem Bild */
+    margin: 0 auto; /* Optional: Zentriert das Bild im Container horizontal */
+}
+
+.check-icon {
+    height: 85px; /* Ändern Sie 100px auf die gewünschte feste Höhe des Bildes */
+    width: auto; /* Das Bild passt sich automatisch der Breite an */
+    display: block; /* Um sicherzustellen, dass es nicht mit anderen Elementen innerhalb des Containers interagiert */
+    margin: 0 auto; /* Zentrierung des Bildes innerhalb des Containers */
+    padding: 10px;
+  }
+
+  .matrix-text {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 15px; /* Versetzt den Text um 3px nach unten */
+    border: 1px solid;
+  }
+
+  .matrix-text p {
+    font-size: 25px; /* Angepasste Textgröße für die mobile Ansicht */
+  }
+
+  .desktop-content-matrix {
+    display: block; /* Verstecke den Desktop-Inhalt auf mobilen Geräten */
+  }
+
+  .mobile-content-matrix {
+    display: none; /* Zeige den mobilen Inhalt auf mobilen Geräten */
+  }
+
+
+  .bg-icon{
+    background-color: #9fdbe5;
+  }
+
+
+  
+  @media screen and (max-width: 1100px) {
+    .matrix-text {
+      height: auto; /* Automatische Höhe für den Text in der mobilen Ansicht */
+      text-align: left; /* Text links ausrichten */
+      padding-right: 0; /* Kein rechter Abstand in der mobilen Ansicht */
+
+    }
+  
+    .matrix-text p {
+      font-size: 32px; /* Angepasste Textgröße für die mobile Ansicht */
+    }
+  
+    .check-icon {
+        height: 45px; /* Ändern Sie 100px auf die gewünschte feste Höhe des Bildes */
+        width: auto; /* Das Bild passt sich automatisch der Breite an */
+        display: block; /* Um sicherzustellen, dass es nicht mit anderen Elementen innerhalb des Containers interagiert */
+        margin: 0 auto; /* Zentrierung des Bildes innerhalb des Containers */
+        padding: 0px;
+      }
+
+    .desktop-content-matrix {
+      display: none; /* Verstecke den Desktop-Inhalt auf mobilen Geräten */
+    }
+
+    .mobile-content-matrix {
+      display: block; /* Zeige den mobilen Inhalt auf mobilen Geräten */
+    }
+  }
+
+
+
+
+
+/* --------------Foot---------- */
+
+.foot-section {
+
+padding-top: 50px;
+
+}
+
+
+
+
+
+
+
+
+
+
+.video-process-section {
+    background-color: #699bac;
+    max-width: 100%;
+    display: inline-block;
+    /* Change this line */
+}
+
+
+
+.video-container {
+    display: flex;
+    align-items: center;
+    /* Zentrieren vertikal */
+    position: relative;
+    width: 100%;
+}
+
+
+
+
+
+.content-container {
+    /* Removed float: right; */
+    width: 100%;
+}
+
+.video-process {
+    max-width: 90%;
+    max-height: 70vh;
+    position: relative;
+    z-index: 1;
+    float: right;
+}
+
+
+.overlay-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: 100%;
+    z-index: 2;
+}
+
+
+
+.desktop-text {
+    display: block;
+    position: absolute;
+    top: 50%;
+    /* Vertikale Ausrichtung auf 50% des übergeordneten Containers */
+    left: 0;
+    transform: translateY(-50%);
+    /* Korrektur, um den Text genau in der Mitte zu zentrieren */
+    z-index: 3;
+    width: 75%;
+    padding: 20px;
+    box-sizing: border-box;
+    /* Beachte auch die Box-Größe, um das Padding in die Berechnung einzubeziehen */
+}
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    .desktop-text {
+        display: none;
+    }
+}
+
+.desktop-text ul {
+    padding-left: 20px;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.desktop-text li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.desktop-text li::before {
+    content: '\2022';
+    position: absolute;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bg-navbar {
+    background-color: #0a4d4d;
+}
+
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.font-bright {
+    color: #A0DCE6;
+}
+
+.font-white {
+    color: white;
+}
+
+.font-alligator {
+    color: #004141;
+}
+
+
+.bg-medium{
+    background-color: #699bac;
+}
+
+
+
+
+
+
+.PlanarFeedtrough {
+    position: relative;
+    height: 100vh;
+    background-image: url("Planleiterplattendurchführung.jpg");
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    /* Setzt die Ebene des Hintergrunds */
+}
+
+
+
+
+.PlanarFeedtrough::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 55, 65, 0);
+    transition: background-color 1s ease;
+}
+
+.PlanarFeedtrough.touch::before {
+    background-color: rgba(0, 55, 65, 0.6);
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .PlanarFeedtrough::before {
+        background-color: rgba(0, 55, 65, 0);
+    }
+
+    .PlanarFeedtrough.touch::before {
+        background-color: rgba(0, 55, 65, 0.6);
+    }
+}
+
+
+
+
+
+
+.PlanarFeedtrough .hidden-text {
+    display: none;
+    position: absolute;
+    z-index: 2;
+}
+
+.PlanarFeedtrough.touch .hidden-text {
+    display: block;
+    /* Weitere Stile für sichtbaren Text hier hinzufügen */
+}
+
+
+
+
+
+
+
+/* Weitere Kommentare und Stile hier, wenn nötig */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.background-param {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.road {
+    height: 270px;
+    background-image: url("road.png");
+}
+
+.subtile_box {
+    text-align: left;
+    padding-left: 30px;
+}
+
+.left-padding {
+    padding-left: 30px;
+}
+
+
+
+.line-height-0_5 {
+    line-height: 0.1rem;
+}
+
+.line-height-1 {
+    line-height: 1rem;
+}
+
+.line-height-2 {
+    line-height: 2rem;
+}
+
+.line-height-2_5 {
+    line-height: 2.5rem;
+}
+
+.line-height-3 {
+    line-height: 3rem;
+}
+
+.line-height-4 {
+    line-height: 4rem;
+}
+
+.line-height-5 {
+    line-height: 5rem;
+}
+
+.subtitle {
+    font-size: 3rem;
+    font-weight: 100;
+
+}
+
+.H2_E_road {
+    position: absolute;
+    height: 250px;
+    width: 2000px;
+}
+
+.H2_E_truck {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    display: block;
+    object-fit: cover;
+    width: 100%;
+
+}
+
+
+.featcher_box {
+    margin-top: 70px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    text-align: left;
+    align-items: center;
+}
+
+
+
+.featchers {
+    list-style: none;
+    padding-left: 0;
+}
+
+/*
+.contact-plate{
+    height: 90vh;
+    background-image: url("contact_plate.jpg");
+}
+*/
+
+.jack {
+    background-image: url("jack.jpg");
+}
+
+
+
+.truck-terminal {
+    height: 90vh;
+    background-image: url("truck_terminal.jpg");
+}
+
+.center-wedge {
+    height: 90vh;
+    background-image: url("center_wedge.jpg");
+}
+
+.base-plate-mirror {
+    height: 90vh;
+    background-image: url("base-plate-mirror.jpg");
+}
+
+
+
+.logistic {
+    width: 99vw;
+}
+
+.font-100 {
+    font-weight: 100;
+}
+
+.font-400 {
+    font-weight: 400;
+}
+
+
+.font-600 {
+    font-weight: 600;
+}
+
+
+
+
+.grd360_subtitle {
+    color: #A0DCE6;
+    text-align: left;
+    font-size: clamp(1.2rem, 4vw, 4rem);
+    font-weight: 100;
+}
+
+.grd360 {
+    color: #A0DCE6;
+    text-align: left;
+    font-size: clamp(6rem, 10vw, 10rem);
+    line-height: 8rem;
+}
+
+
+
+.subtitle-semi {
+    font-size: 3rem;
+}
+
+.top-space {
+    margin-top: 6vh;
+    margin-left: 30px;
+}
+
+.top-bottom-space {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.top-bottom-space-2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+.top-padding-large {
+    padding-top: 18vh;
+}
+
+.top-padding-medium {
+    padding-top: 7vw;
+}
+
+.top-padding-medium-small {
+    padding-top: 5vw;
+}
+
+.top-bottom-padding {
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.top-bottom-padding-small {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+
+.top-poadding-small {
+    padding-top: 16px;
+}
+
+.padding-right-small {
+    padding-right: 16px;
+}
+
+.padding-left-small {
+    padding-left: 16px;
+}
+
+.padding-left-extra-small {
+    padding-left: 6px;
+}
+
+
+
+
+.margin-right{
+    margin-right: 30px;
+}
+
+.margin-left {
+    margin-left: 30px;
+}
+
+
+.padding-right {
+    padding-right: 5vw;
+}
+
+.top-padding {
+    padding-top: 30px;
+}
+
+.top-padding-70 {
+    padding-top: 65vh;
+}
+
+
+.top-padding-small {
+    padding-top: 2vh;
+}
+
+.top-bottom-margin {
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+
+.bottom-padding {
+    padding-bottom: 20px;
+}
+
+.bottom-padding-large {
+    padding-bottom: 120px;
+}
+
+
+.bottom-padding-small {
+    padding-bottom: 3vh;
+}
+
+.bottom-padding-extra-small {
+    padding-bottom: 20px;
+}
+
+.voltage-management {
+    margin-top: 40px;
+}
+
+.posbilitys-list {
+    list-style: none;
+}
+
+.text-center {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: auto;
+}
+
+.electric-featchers {
+    width: 62vw;
+    margin-right: 0;
+    margin-left: auto;
+    padding-top: 20vh;
+}
+
+.truck-and-bike {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.featcher_box {
+    text-align: left;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.center-align {
+    text-align: center;
+}
+
+
+.spring-plate {
+    display: flex;
+    justify-content: left;
+    align-items: baseline;
+    width: 100%;
+
+}
+
+.text-box-zuverlaessig {
+    width: 100%;
+    margin-left: 12px;
+}
+
+.truck {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.alligator-logo {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    margin-left: 80px;
+    margin-right: 80px;
+    width: 80%;
+}
+
+.truck-size {
+    height: 350px;
+}
+
+
+.icon {
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+    height: 100px;
+}
+
+.text-horizontal-center {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.horizont-half {
+    height: 50vh;
+}
+
+
+
+
+
+
+
+.margin-top {
+    margin-top: 5vh;
+}
+
+.margin {
+    margin: 50px;
+}
+
+.impressum {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 100%;
+    text-align: center;
+}
+
+
+
+.title-padding-top {
+    padding-top: 7vw;
+}
+
+
+.title-padding-top-small {
+    padding-top: 2vw;
+}
+
+
+.picture-discription {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 100%;
+    text-align: center;
+
+}
+
+.michael-schacher {
+    padding-top: 50px;
+    width: 100%;
+}
+
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+}
+
+.news-foto {
+    width: 100%;
+    padding-bottom: 20px;
+
+}
+
+
+
+.section-line {
+    position: relative;
+}
+  
+  .section-line::before,
+  .section-line::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-top: 1.5px solid #0a4d4d; /* Farbe der horizontalen Linien */
+}
+  
+  .section-line::before {
+    top: 0;
+}
+  
+  .section-line::after {
+    bottom: 0;
+}
+
+
+.section-line-process {
+    position: relative;
+}
+
+.section-line-process::before,
+.section-line-process::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px; /* Höhe der Linien */
+    background-color: #0a4d4d; /* Farbe der horizontalen Linien */
+    z-index: 1; /* Stellt sicher, dass die Linien über dem Inhalt liegen */
+}
+
+.section-line-process::before {
+    top: -2px; /* Position der oberen Linie */
+}
+
+.section-line-process::after {
+    bottom: -2px; /* Position der unteren Linie */
+}
+
+
+.section-line-top {
+    position: relative;
+}
+
+.section-line-top::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -2px; /* Versatz nach oben */
+    height: 2px; /* Höhe der Linie */
+    background-color: #0a4d4d; /* Farbe der horizontalen Linie */
+    z-index: 1; /* Stellt sicher, dass die Linie über dem Inhalt liegt */
+}
